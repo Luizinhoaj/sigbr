@@ -218,9 +218,9 @@ nav .content .links{
 	width: 200px;
 	height: 250px;
 	margin: 50px auto 0 auto;
-	color:#fefefe;
+	color: var(--cor-fonte);
 	padding-top:15px;
-	background:#547787;
+	background:var(--cor-submenu);
   	padding-bottom:15px;
 }
   
@@ -232,9 +232,18 @@ nav .content .links{
   
 .Blog .blog-des{
 	color: var(--fonte-geral);
-	font-size:90%;
+	font-size: 90%;
 	text-align: center;
 }
+
+.blog-drop-down > a:hover+.Blog{
+	display:block;
+}
+
+.acompa-iframe{
+	display:none
+}
+
 
 /* Responsive code start */
 @media screen and (max-width: 1250px){

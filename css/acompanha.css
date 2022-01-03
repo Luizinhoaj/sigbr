@@ -1,13 +1,20 @@
 :root{
-	--cor-fonte: #fff;
-	--cor-fundo: #23364B;
-}
+	--cor-fonte:   #fff;
+	--cor-fundo:   #324E6C;
+	--cor-menu:	   #23364B;
+	--cor-submenu: #547787;
+	--cor-hover:   #009FE1;
+	--cor-border:  #365670;
 
+	--fonte-geral: 'Poppins', sans-serif;
+}
 body{
 	margin: 0;
 	padding: 0;
 	font: 300 14px/18px Roboto;
     background: var(--cor-fundo);
+	width: 40%;
+	height: 50%;
  }
   
  * {
@@ -31,7 +38,7 @@ body{
 	border-color: #23364B;
 	background:linear-gradient(to bottom, #23364B 5%, #365670 100%);
 	box-shadow:inset 0px 1px 0px 0px #d7ecfd;
-	color:#fff;
+	color: var(--cor-fonte);
 	text-shadow:0px 1px 0px #528009;  
 } 
 

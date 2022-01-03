@@ -26,7 +26,7 @@
                             <input type="checkbox" id="show-features">
                             <label for="show-features">Cadastro</label>
                             <ul>
-                                <li><a href="acompanhamento.html">Acompanhamento</a></li>
+                                <li><a onclick="carregaacompa()" href="acompanhamento.html">Acompanhamento</a></li>
                                <li><a href="#">Adicionais</a></li>
                                 <li><a href="#">Categoria</a></li>
                                 <li><a href="#">Fornecedores</a></li>
@@ -87,8 +87,9 @@
                             </ul>
                         </li>
 
-                        <li><a href="#"></i>Contatos</a>
-                            <div class="Blog animated fadeIn">
+                        <li class="blog-drop-down">
+                            <a href="#">Contatos</a>
+                            <div class="Blog">
                                 <div class="blog-des">
                                     <h4 class="blog-title">Ribeiro & Santos</h4>
                                     <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
@@ -96,6 +97,7 @@
                                 </div>
                             </div>
                         </li>
+    
                     </ul>
                 </div>
                 <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
@@ -110,7 +112,15 @@
             <div>
                 <img class="image-logo" src="imagens/logo.png" alt="Garçon">
             </div>
-          </section>
-          <script src="js/script.js"></script>
+        </section>
+        
+        <div class="acompa-iframe">
+            <div class="iframe-acompa">
+                <iframe frameborder='0' scrolling='no' src='acompanhamento.html' frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+          </div>
+
+        <script src="js/script.js"></script>
     </body>
 </html>
