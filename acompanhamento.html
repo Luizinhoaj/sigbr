@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/acompanha.css">
+        <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+        <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section>
+             <form class="foracompanha">
+                <h1>Acompanhamento</h1>
+                <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
+                <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
+                <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
+                <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
+                <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
+                <button type="button" class="btnfechar" onclick="window.location='#'">Fechar</button>
+                <fieldset id="acompanhamento"><legend>Acompanhamento</legend>
+                    <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
+                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Acompanhamento"/></p>
+                    <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00"/></p>
+                    <div class="cad-acom-img">
+                        <fieldset id="cad-acompanha"><legend>Acompanhamento Cadastrado</legend>
+                            <textarea></textarea>
+                        </fieldset>
+                        <fieldset id="img-acompanha"><legend>Imagem</legend>
+                            <img class="imagem-acompanha" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
+                            <button type="button">buscar</button>
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <script src="js/script.js"></script>
+    </body>
+</html>
