@@ -25,13 +25,13 @@ body{
 	margin-left: 5px;
 }
 
-.foradicional{
+.formulario{
 	display: inline-block;
 	margin-top: 20%;
 	margin-left: 80%;
 }
 
-.foradicional button{
+.formulario button{
 	border:1px solid #25692A;
 	border-radius:4px;
 	display:inline-block;
@@ -52,7 +52,7 @@ body{
 	margin-left: 25px;
 }
 
-.foradicional button:hover{
+.formulario button:hover{
 	background:linear-gradient(to bottom, #23364B 5%, #86c6f8 100%);
     box-shadow: 0px 0px 10px #517ead;
     transform: translate(0px, -5px);
@@ -60,21 +60,21 @@ body{
 }
 	
 	
-.foradicional:active {
+.formulario:active {
 	position:relative;
 	top:2px;
 }
 
-#adicional{
+#for-legenda{
 	margin: 15px;
 	padding: 15px;
 }
 
-#adicional input{
+#for-legenda input{
 	height: 30px;
 }
 
-.foradicional > h1{
+.formulario > h1{
 	color: var(--cor-fonte);
 	text-align: center;
 	font-style: oblique;
@@ -82,7 +82,7 @@ body{
 	margin-bottom: 20px;
 }
 
-#adicional label, fieldset{
+#for-legenda label, fieldset{
 	color: var(--cor-fonte);
 }
 
@@ -107,33 +107,33 @@ body{
 	text-align: right;
 }
 
-.cad-acom-img{
+.cad-for-img{
 	display: flex;
 	width: 450px;
 	padding: 5px ;
 }
 
-#cad-adicional{
+#cad-fomulario{
 	padding: 5px;
 	width: 300px;
 	margin-right: 10px;
 }
 
 
-#cad-adicional textarea{
+#cad-fomulario textarea{
 	width: 280px;
 	height: 200px;
 	margin-right: 10px;
 }
 
-#img-adicional{
+#img-fomulario{
 	width: 120px;
 	height: 160px;
 	text-align: center;
 	margin: auto;
 }
 
-.imagem-adicional{
+.imagem-fomulario{
 	width: 100px;
 	height: 100px;
 }
