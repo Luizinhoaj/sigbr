@@ -1,0 +1,255 @@
+:root{
+	--cor-fonte:   #fff;
+	--cor-fundo:   #324E6C;
+	--cor-menu:	   #23364B;
+	--cor-submenu: #547787;
+	--cor-hover:   #009FE1;
+	--cor-border:  #365670;
+
+	--fonte-geral: 'Poppins', sans-serif;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font: 300 14px/18px Roboto;
+    background: var(--cor-fundo);
+	text-align: center;
+ }
+  
+*{
+  box-sizing: border-box
+}
+
+.btnincluir{
+	margin-left: 5px;
+}
+
+.formulario{
+	display: inline-block;
+	width: 70%;
+	margin-top: 8%;
+}
+
+.formulario button{
+	border:1px solid #25692A;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Verdana;
+	font-weight:bold;
+	font-size:13px;
+	padding:6px 10px;
+	text-decoration:none;
+	border-color: #23364B;
+	background:linear-gradient(to bottom, #23364B 5%, #365670 100%);
+	box-shadow:inset 0px 1px 0px 0px #d7ecfd;
+	color: var(--cor-fonte);
+	text-shadow:0px 1px 0px #528009;  
+} 
+
+.btnincluir{
+	margin-left: 25px;
+}
+
+.formulario button:hover{
+	background:linear-gradient(to bottom, #23364B 5%, #86c6f8 100%);
+    box-shadow: 0px 0px 10px #517ead;
+    transform: translate(0px, -5px);
+    transition: transform 0.5s;
+}
+
+.formulario:active {
+	position:relative;
+	top:2px;
+}
+
+#for-legenda{
+	text-align: left;
+	margin: 15px;
+	padding: 15px;
+}
+
+#for-legenda input{
+	height: 30px;
+}
+
+.formulario > h1{
+	color: var(--cor-fonte);
+	text-align: center;
+	font-style: oblique;
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+
+#for-legenda label, fieldset{
+	color: var(--cor-fonte);
+}
+
+/*   INICIO DO CAMPOS DO FORMULARIO */
+
+#ccodigo{
+	margin: 5px;
+	padding: 5px;
+	text-align: right;
+	width: 50px;
+}
+
+#cnome{
+	margin: 5px;
+	padding: 5px;
+	width: 380px;
+}
+
+#cend{
+	margin: 5px;
+	padding: 5px;
+	width: 380px;
+}
+
+#cnum{
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+}
+
+#ccomp{
+	margin: 5px;
+	padding: 5px;
+	width: 110px;
+}
+
+#cbairro{
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+}
+
+#ccep{
+	margin: 5px;
+	padding: 5px;
+	width: 100px;
+}
+
+#ccidade{
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+}
+
+.for-est-fone{
+	display: inline-flex;
+	width: 100%;
+}
+
+#cestado{
+	padding: 5px;
+	margin: 5px;
+	width: 200px;
+}
+
+#for-fone{
+	display: flex;
+	margin: 5px;
+	padding: 5px;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#cfixo{
+	margin: 5px;
+	padding: 5px;
+	width: 125px;
+}
+
+#ccelular1{
+	margin: 5px;
+	padding: 5px;
+	width: 135px;
+}
+
+#ccelular2{
+	margin: 5px;
+	padding: 5px;
+	width: 135px;
+}
+
+#cemail{
+	margin: 5px;
+	padding: 5px;
+	width: 600px;
+}
+
+
+/* responsive */
+@media (min-width:767px){
+	.exo-menu > li > a{
+		display:block;
+		padding: 20px 22px;
+ 	}
+
+	.Blog,.flyout-right>ul,
+	.flyout-left>ul, li.drop-down>ul{
+		position:absolute;
+	}
+
+	.flyout-right>ul{
+		left: 100%;
+	}
+
+	.flyout-left>ul{
+    	right: 100%;
+	}
+
+	.image-zap{
+    	width: 7em;
+	}
+
+	.logo{
+    	text-align: center;
+	}
+
+	.image-logo{
+    	margin: auto;
+		margin-top: 50px;
+		width: 400px;
+	}
+}
+
+@media (max-width:767px){
+
+	.exo-menu {
+		min-height: 58px;
+		background-color: #23364B;
+		width: 100%;
+	}
+	
+	.exo-menu > li > a{
+		width:100% ;
+	    display:none ;
+	
+	}
+
+	.exo-menu > li{
+		width:100%;
+	}
+
+	.display.exo-menu > li > a{
+	  display:block ;
+	  	padding: 20px 22px;
+	}
+	
+	.mega-menu, .Images, .Blog,.flyout-right>ul,
+	.flyout-left>ul, li.drop-down>ul{
+		position:relative;
+	}
+	
+	a.toggle-menu{
+ 		position: absolute;
+   		right: 0px;
+    	padding: 20px;
+    	font-size: 27px;
+    	background-color: #ccc;
+    	color: #23364B;
+    	top: 0px;
+	}
+}

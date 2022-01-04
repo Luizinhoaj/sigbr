@@ -13,3 +13,7 @@ function carregaadicionais() {
 function carregacategoria() {
   window.location = "categoria.html";
 }
+
+function carregafonecedores() {
+  window.location = "fornecedores.html";
+}

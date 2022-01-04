@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/principal.css">
-        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/fornecedores.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
         <title>SIGBR - Adicional</title>
@@ -110,26 +110,69 @@
         </div>
         <section>
             <form class="formulario">
-                <h1>Adicionais</h1>
+                <h1>Fornecedores</h1>
                 <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
                 <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
                 <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
+                <button type="button" class="btnpesquisa" onclick="window.location='#'">Pesquisar</button>
                 <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
                 <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
                 <button type="button" class="btnfechar" onclick="window.location='#'">Fechar</button>
-                <fieldset id="for-legenda"><legend>Adicional</legend>
-                    <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
-                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Adicional"/></p>
-                    <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00"/></p>
-                    <div class="cad-for-img">
-                        <fieldset id="cad-fomulario"><legend>Adicionais Cadastrados</legend>
-                            <textarea></textarea>
+                <fieldset id="for-legenda">
+                    <p>
+                        <label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/>
+                        <label for="cnome">Nome :</label><input type="text" name="tnome" id="cnome" placeholder="Nome"/>
+                    </p>
+                    <p>
+                        <label for="cend">Endereço :</label> <input type="text" name="tend" id="cend" placeholder="Endereço"/>
+                        <label for="cnum">Numero :</label> <input type="number" name="tnum" id="cnum" placeholder="000"/>
+                        <label for="ccomp">Complemento :</label> <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
+                    </p>
+                    <p>
+                        <label for="cbairro">Bairro :</label> <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
+                        <label for="ccep">CEP :</label> <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
+                        <label for="ccidade">Cidade :</label> <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
+                    </p>
+                    <div class="for-est-fone">
+                        <fieldset id="cestado"><legend>Estado</legend>
+                            <select id=cbtipo>
+                                <option>Seleciona o Estado</option>
+                                <option>Acre</option>
+                                <option>Alagoas</option>
+                                <option>Amapá</option>
+                                <option>Amazonas</option>
+                                <option>Bahia</option>
+                                <option>Ceará</option>
+                                <option>Distrito Federal</option>
+                                <option>Espírito Santo</option>
+                                <option>Goiás</option>
+                                <option>Maranhão</option>
+                                <option>Mato Grosso</option>
+                                <option>Mato Grosso do Sul</option>
+                                <option>Minas Gerais</option>
+                                <option>Pará</option>
+                                <option>Paraíba</option>
+                                <option>Paraná</option>
+                                <option>Pernambuco</option>
+                                <option>Piauí</option>
+                                <option>Rio de Janeiro</option>
+                                <option>Rio Grande do Norte</option>
+                                <option>Rio Grande do Sul</option>
+                                <option>Rondônia</option>
+                                <option>Roraima</option>
+                                <option>Santa Catarina</option>
+                                <option>São Paulo</option>
+                                <option>Sergipe</option>
+                                <option>Tocantins</option>
+                            </select>
                         </fieldset>
-                        <fieldset id="img-fomulario"><legend>Imagem</legend>
-                            <img class="imagem-fomulario" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
-                            <button type="button">buscar</button>
+                        <fieldset id="for-fone"><legend>Telefone</legend>
+                            <p><label for="cfixo">Fixo :</label><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
+                            <p><label for="ccelular1">Celular 1 :</label><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
+                            <p><label for="ccelular2">Celular 2 :</label><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
                         </fieldset>
                     </div>
+                    <p><label for="cemail">E-Mail :</label><input type="email=" name="temail" id="cemail"/></p>
                 </fieldset>
             </form>
         </section>
