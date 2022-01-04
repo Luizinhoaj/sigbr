@@ -1,9 +1,7 @@
 function carregaacompa() {
-    document.getElementById("carlogo").style.display = 'none';
-    document.getElementById("ifacompanha").style.display = 'inline-block';
+  window.location = "acompanhamento.html";
 }
 
 function carregahome() {
-  document.getElementById("carlogo").style.display = 'block';
-  document.getElementById("ifacompanha").style.display = 'none';
+  window.location = "principal.html";
 }

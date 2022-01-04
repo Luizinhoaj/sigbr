@@ -209,6 +209,7 @@ nav .content .links{
 }
   
 .image-logo{
+	display: block;
 	margin-top: 0px;
   	width: 400px;
 }
@@ -238,10 +239,6 @@ nav .content .links{
 
 .blog-drop-down > a:hover+.Blog{
 	display:block;
-}
-
-.acompa-iframe{
-	display:none
 }
 
 

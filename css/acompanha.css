@@ -17,12 +17,18 @@ body{
 	height: 50%;
  }
   
- * {
+*{
   box-sizing: border-box
 }
 
 .btnincluir{
 	margin-left: 5px;
+}
+
+.foracompanha{
+	display: inline-block;
+	margin-top: 20%;
+	margin-left: 80%;
 }
 
 .foracompanha button{
@@ -57,7 +63,8 @@ body{
 }
 
 #acompanhamento{
-	margin: 10px;
+	margin: 15px;
+	padding: 15px;
 }
 
 #acompanhamento input{
@@ -69,26 +76,30 @@ body{
 	text-align: center;
 	font-style: oblique;
 	text-decoration: underline;
+	margin-bottom: 20px;
 }
 
 #acompanhamento label, fieldset{
-	color: var(--cor-fonte)
+	color: var(--cor-fonte);
 }
 
 #ccodigo{
-	margin-left: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	text-align: right;
 	width: 50px;
 }
 
 #cdescricao{
-	margin-left: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	width: 350px;
 	text-transform: uppercase;
 }
 
 #cvalor{
-	margin-left: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
 	width: 120px;
 	text-align: right;
 }
@@ -100,7 +111,7 @@ body{
 }
 
 #cad-acompanha{
-	padding: 0;
+	padding: 5px;
 	width: 300px;
 	margin-right: 10px;
 }
