@@ -25,13 +25,13 @@ body{
 	margin-left: 5px;
 }
 
-.foracompanha{
+.foradicional{
 	display: inline-block;
 	margin-top: 20%;
 	margin-left: 80%;
 }
 
-.foracompanha button{
+.foradicional button{
 	border:1px solid #25692A;
 	border-radius:4px;
 	display:inline-block;
@@ -52,7 +52,7 @@ body{
 	margin-left: 25px;
 }
 
-.foracompanha button:hover{
+.foradicional button:hover{
 	background:linear-gradient(to bottom, #23364B 5%, #86c6f8 100%);
     box-shadow: 0px 0px 10px #517ead;
     transform: translate(0px, -5px);
@@ -60,21 +60,21 @@ body{
 }
 	
 	
-.foracompanha:active {
+.foradicional:active {
 	position:relative;
 	top:2px;
 }
 
-#acompanhamento{
+#adicional{
 	margin: 15px;
 	padding: 15px;
 }
 
-#acompanhamento input{
+#adicional input{
 	height: 30px;
 }
 
-.foracompanha > h1{
+.foradicional > h1{
 	color: var(--cor-fonte);
 	text-align: center;
 	font-style: oblique;
@@ -82,7 +82,7 @@ body{
 	margin-bottom: 20px;
 }
 
-#acompanhamento label, fieldset{
+#adicional label, fieldset{
 	color: var(--cor-fonte);
 }
 
@@ -113,27 +113,27 @@ body{
 	padding: 5px ;
 }
 
-#cad-acompanha{
+#cad-adicional{
 	padding: 5px;
 	width: 300px;
 	margin-right: 10px;
 }
 
 
-#cad-acompanha textarea{
+#cad-adicional textarea{
 	width: 280px;
 	height: 200px;
 	margin-right: 10px;
 }
 
-#img-acompanha{
+#img-adicional{
 	width: 120px;
 	height: 160px;
 	text-align: center;
 	margin: auto;
 }
 
-.imagem-acompanha{
+.imagem-adicional{
 	width: 100px;
 	height: 100px;
 }

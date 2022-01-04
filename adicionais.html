@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/principal.css">
-        <link rel="stylesheet" href="css/acompanha.css">
+        <link rel="stylesheet" href="css/adicionais.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
-        <title>SIGBR - Acompanhamento</title>
+        <title>SIGBR - Adicional</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
@@ -109,24 +109,24 @@
             </nav>
         </div>
         <section>
-            <form class="foracompanha">
-                <h1>Acompanhamento</h1>
+            <form class="foradicional">
+                <h1>Adicionais</h1>
                 <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
                 <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
                 <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
                 <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
                 <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
                 <button type="button" class="btnfechar" onclick="window.location='#'">Fechar</button>
-                <fieldset id="acompanhamento"><legend>Acompanhamento</legend>
+                <fieldset id="adicional"><legend>Adicional</legend>
                     <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
-                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Acompanhamento"/></p>
+                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Adicional"/></p>
                     <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00"/></p>
                     <div class="cad-acom-img">
-                        <fieldset id="cad-acompanha"><legend>Acompanhamento Cadastrados</legend>
+                        <fieldset id="cad-adicional"><legend>Adicionais Cadastrados</legend>
                             <textarea></textarea>
                         </fieldset>
-                        <fieldset id="img-acompanha"><legend>Imagem</legend>
-                            <img class="imagem-acompanha" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
+                        <fieldset id="img-adicional"><legend>Imagem</legend>
+                            <img class="imagem-adicional" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
                             <button type="button">buscar</button>
                         </fieldset>
                     </div>
