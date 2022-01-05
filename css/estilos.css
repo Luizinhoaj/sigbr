@@ -44,12 +44,8 @@ body{
 	text-shadow:0px 1px 0px #528009;  
 } 
 
-.btnincluirga{
-	margin-left: 15px;
-}
-
 .btnincluir{
-	margin-left: 25px;
+	margin-left: 50px;
 }
 
 .formulario button:hover{

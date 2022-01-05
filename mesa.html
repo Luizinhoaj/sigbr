@@ -34,7 +34,7 @@
                                 <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
                                 <li><a onclick="carregamesa()" href="#">Mesa</a></li>
                                 <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
-                                <li><a href="#">Produtos</a></li>
+                                <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
                                 <li><a href="#">Setores</a></li>
                                 <li><a href="#">Usuário</a></li>
                             </ul>
@@ -111,12 +111,11 @@
         <section>
             <form class="formulario">
                 <h1>Mesas</h1>
-                <button type="button" class="btnincluirga" onclick="window.location='#'">Incluir</button>
+                <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
                 <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
                 <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
                 <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
                 <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
-                <button type="button" class="btnfechar" onclick="window.location='#'">Fechar</button>
                 <fieldset id="for-legenda"><legend>Mesa</legend>
                     <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
                     <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição da Mesa"/></p>

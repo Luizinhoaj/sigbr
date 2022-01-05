@@ -29,3 +29,7 @@ function carregamesa() {
 function carregaobservacoes() {
   window.location = "observacoes.html";
 }
+
+function carregaprodutos() {
+  window.location = "produtos.html";
+}

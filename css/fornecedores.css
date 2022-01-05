@@ -84,14 +84,74 @@ body{
 #for-legenda label, fieldset{
 	color: var(--cor-fonte);
 }
+/* INICIO DAS DIV*/
+
+.contener{
+	width: 100%;
+	display: flex;
+}
+
+.contener-compras{
+	border: 1px solid black;
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+/* INICIO FILDSET */
+
+#cbforne, #cbsetor, #cbcatgoria{
+	margin: 5px;
+	padding: 5px;
+	width: 400px;
+}
+
+#ccompra{
+	margin: 5px;
+	padding: 5px;
+	width: 100%;
+}
 
 /*   INICIO DO CAMPOS DO FORMULARIO */
+
+.dados{
+	border: 1px solid black;
+	width: 75%;
+	padding: 10px;
+	margin-right: 20px;
+}
+.imagem{
+	border: 1px solid black;
+	width: 25%;
+	padding: 10px;
+}
+
+.imagem-fomulario{
+	width: 150px;
+	height: 150px;
+	margin-bottom: 12px;
+}
+
+#img-fomulario{
+	width: 170px;
+	height: 180px;
+	text-align: center;
+	margin: auto;
+}
 
 #ccodigo{
 	margin: 5px;
 	padding: 5px;
 	text-align: right;
 	width: 50px;
+}
+
+
+#ccod-barra{
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
 }
 
 #cnome{
