@@ -84,7 +84,8 @@ body{
 #for-legenda label, fieldset{
 	color: var(--cor-fonte);
 }
-/* INICIO DAS DIV*/
+
+			/* INICIO DAS DIV*/
 
 .contener{
 	width: 100%;
@@ -92,14 +93,56 @@ body{
 }
 
 .contener-compras{
-	border: 1px solid black;
 	width: 100%;
 	display: flex;
-	margin-bottom: 5px;
-	margin-top: 5px;
 }
 
-/* INICIO FILDSET */
+.contener-estoque{
+	width: 100%;
+	display: flex;
+}
+
+.dados{
+	width: 75%;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.for-est-fone{
+	display: inline-flex;
+	width: 100%;
+}
+
+.imagem{
+	width: 25%;
+	padding: 5px;
+}
+
+.dados-compra{
+	width: 75%;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+.prod-est{
+	width: 25%;
+}
+
+.dados-estoque{
+	width: 85%;
+	padding: 5px;
+	margin-right: 20px;
+}
+
+			/* INICIO FILDSET */
+
+#for-fone{
+	display: flex;
+	margin: 5px;
+	padding: 5px;
+	width: 100%;
+	justify-content: space-between;
+}
 
 #cbforne, #cbsetor, #cbcatgoria{
 	margin: 5px;
@@ -108,34 +151,38 @@ body{
 }
 
 #ccompra{
+	display: flex;
+	margin: 5px;
+	padding: 5px 5px 5px 10px;
+}
+
+#cestoque {
+	width: 95%;
 	margin: 5px;
 	padding: 5px;
-	width: 100%;
 }
 
-/*   INICIO DO CAMPOS DO FORMULARIO */
+#cest-atual {
+	width: 95%;
+	padding: 5px;
+}
 
-.dados{
-	border: 1px solid black;
-	width: 75%;
-	padding: 10px;
-	margin-right: 20px;
+#prod-tipo{
+	padding: 5px;
+	text-align: center;
 }
-.imagem{
-	border: 1px solid black;
-	width: 25%;
-	padding: 10px;
-}
+
+			/*   INICIO DO CAMPOS DO FORMULARIO */
+
 
 .imagem-fomulario{
 	width: 150px;
 	height: 150px;
-	margin-bottom: 12px;
 }
 
 #img-fomulario{
 	width: 170px;
-	height: 180px;
+	height: 210px;
 	text-align: center;
 	margin: auto;
 }
@@ -196,23 +243,10 @@ body{
 	width: 200px;
 }
 
-.for-est-fone{
-	display: inline-flex;
-	width: 100%;
-}
-
 #cestado{
 	padding: 5px;
 	margin: 5px;
 	width: 200px;
-}
-
-#for-fone{
-	display: flex;
-	margin: 5px;
-	padding: 5px;
-	width: 100%;
-	justify-content: space-between;
 }
 
 #cfixo{
@@ -221,13 +255,7 @@ body{
 	width: 125px;
 }
 
-#ccelular1{
-	margin: 5px;
-	padding: 5px;
-	width: 135px;
-}
-
-#ccelular2{
+#ccelular1, #ccelular2{
 	margin: 5px;
 	padding: 5px;
 	width: 135px;
@@ -239,6 +267,40 @@ body{
 	width: 600px;
 }
 
+#cdata-compra{
+	padding: 5px;
+	margin: 5px 45px 5px 5px;
+	width: 150px;
+}
+
+#cvalor-custo{
+	padding: 5px;
+	margin: 5px;
+	width: 100px;
+	text-align: right;
+}
+
+#sim-est, #nao-est{
+	margin-left: 20px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#catual, #cminimo{
+	padding: 5px;
+	margin-left: 5px;
+	margin-right: 60px;
+	width: 100px;
+	text-align: right;
+
+}
+
+#ctipo{
+	padding: 5px;
+	margin: 5px;
+	width: 50px;
+	text-align: center;
+}
 
 /* responsive */
 @media (min-width:767px){
