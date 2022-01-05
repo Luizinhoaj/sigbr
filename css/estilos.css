@@ -21,10 +21,6 @@ body{
   box-sizing: border-box
 }
 
-.btnincluir{
-	margin-left: 5px;
-}
-
 .formulario{
 	display: inline-block;
 	margin-top: 20%;
@@ -48,6 +44,10 @@ body{
 	text-shadow:0px 1px 0px #528009;  
 } 
 
+.btnincluirga{
+	margin-left: 15px;
+}
+
 .btnincluir{
 	margin-left: 25px;
 }
@@ -58,7 +58,6 @@ body{
     transform: translate(0px, -5px);
     transition: transform 0.5s;
 }
-	
 	
 .formulario:active {
 	position:relative;
@@ -113,12 +112,35 @@ body{
 	padding: 5px ;
 }
 
+#cad-for-garcom{
+	padding: 5px;
+	width: 420px;
+	margin-right: 10px;
+}
+
+#cad-for-garcom textarea{
+	padding: 5px;
+	width: 400px;
+	height: 130px;
+}
+
+
 #cad-fomulario{
 	padding: 5px;
 	width: 300px;
 	margin-right: 10px;
 }
 
+#ccelular1, #ccelular2 {
+	margin: 5px;
+	padding: 5px;
+	width: 135px;
+}
+#cad-telefone{
+	display: inline-flex;
+	padding: 5px 5px 5px 15px;
+	margin-bottom: 10px;
+}
 
 #cad-fomulario textarea{
 	width: 280px;

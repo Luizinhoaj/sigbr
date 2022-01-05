@@ -17,3 +17,7 @@ function carregacategoria() {
 function carregafonecedores() {
   window.location = "fornecedores.html";
 }
+
+function carregagarcom() {
+  window.location = "garcom.html";
+}
