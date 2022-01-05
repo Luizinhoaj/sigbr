@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/estilos.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
-        <title>SIGBR - Principal</title>
+        <title>SIGBR - Adicional</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
@@ -87,7 +88,8 @@
                             </ul>
                         </li>
 
-                        <li class="blog-drop-down"><a href="#">Contatos</a>
+                        <li class="blog-drop-down">
+                            <a href="#">Contatos</a>
                             <div class="Blog">
                                 <div class="blog-des">
                                     <h4 class="blog-title">Ribeiro & Santos</h4>
@@ -106,11 +108,23 @@
                 </form>
             </nav>
         </div>
-
-        <section class="clas-logo">
-            <div>
-                <img class="image-logo" src="imagens/logo.png" alt="Garçon">
-            </div>
+        <section>
+            <form class="formulario">
+                <h1>Mesas</h1>
+                <button type="button" class="btnincluirga" onclick="window.location='#'">Incluir</button>
+                <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
+                <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
+                <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
+                <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
+                <button type="button" class="btnfechar" onclick="window.location='#'">Fechar</button>
+                <fieldset id="for-legenda"><legend>Mesa</legend>
+                    <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
+                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição da Mesa"/></p>
+                    <fieldset id="cad-for-mesa"><legend>Mesas Cadastradas</legend>
+                        <textarea></textarea>
+                    </fieldset>
+                </fieldset>
+            </form>
         </section>
         <script src="js/script.js"></script>
     </body>

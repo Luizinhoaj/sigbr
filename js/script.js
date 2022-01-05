@@ -21,3 +21,11 @@ function carregafonecedores() {
 function carregagarcom() {
   window.location = "garcom.html";
 }
+
+function carregamesa() {
+  window.location = "mesa.html";
+}
+
+function carregaobservacoes() {
+  window.location = "observacoes.html";
+}

@@ -124,6 +124,18 @@ body{
 	height: 130px;
 }
 
+#cad-for-mesa{
+	padding: 5px;
+	width: 420px;
+	margin-right: 10px;
+}
+
+#cad-for-mesa textarea{
+	padding: 5px;
+	width: 420px;
+	height: 130px;
+}
+
 
 #cad-fomulario{
 	padding: 5px;
