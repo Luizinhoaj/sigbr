@@ -4,134 +4,183 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/principal.css">
+
+        <link rel="stylesheet" href="css/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/css/bootstrap-icons.css">
         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/bootsnav.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
+
         <title>SIGBR - Acompanhamento</title>
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="menu">
-            <nav>
-                <input type="checkbox" id="show-search">
-                <input type="checkbox" id="show-menu">
-                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-                <div class="content">
-                    <div class="logo"><a href="#">SIGBR</a></div>
-                    <ul class="links">
-                        <li><a onclick="carregahome()" href="#">Home</a></li>
-                        <li>
-                            <a href="#" class="desktop-link">Cadastro</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">Cadastro</label>
-                            <ul>
-                                <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
-                                <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
-                                <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
-                                <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
-                                <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
-                                <li><a onclick="carregamesa()" href="#">Mesa</a></li>
-                                <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
-                                <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
-                                <li><a href="#">Setores</a></li>
-                                <li><a href="#">Usuário</a></li>
-                            </ul>
-                        </li>
+        <header>
+            <nav id='cssmenu'>
+                <div class="logo">
+                    <a href="index.html">SIGBR</a>
+                </div>
+                <div id="head-mobile">
 
-                        <li>
-                            <a href="#" class="desktop-link">Financeiro</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Financeiro</label>
-                            <ul>
-                                <li><a href="#">Caixa</a></li>
-                                <li>
-                                    <a href="#" class="desktop-link">Conta a Pagar</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Conta a Pagar</label>
-                                    <ul>
-                                        <li><a href="#">Lançamentos</a></li>
-                                        <li><a href="#">Baixa / Extorno</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                </div>
+                <div class="button">
 
-                        <li>
-                            <a href="#" class="desktop-link">PDV</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">PDV</label>
-                            <ul>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Cozinha</a></li>
-                                <li><a href="#">Mapa das Mesas</a></li>
-                                <li><a href="#">Venda de Balcão</a></li>
-                            </ul>
-                        </li>
-                
-                        <li>
-                            <a href="#" class="desktop-link">Relatórios</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Relatórios</label>
-                            <ul>
-                                <li><a href="#">Contas a Pagar</a></li>
-                                <li>
-                                   <a href="#" class="desktop-link">Fornecedores</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Fornecedores</label>
-                                    <ul>
-                                        <li><a href="#">Ordem Alfabética</a></li>
-                                        <li><a href="#">Ordem de Código</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                </div>
+                <ul>
+                    <li class='active'><a href='#'>HOME</a></li>
+                    <li><a href='#'>CADASTRO</a>
+                        <ul>
+                            <li><a onclick="carregaacompa()"  href="#">Acompanhamento</a></li>
+                            <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
+                            <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
+                            <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
+                            <li><a onclick="carregaprodutos()"  href="#">Produtos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a onclick="carregamesa()" href="#">Mesa</a></li>
+                            <li><a href="#">Setor</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
+                            <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
+                            <li><a href="#">Usuário</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>FINACEIRO</a>
+                        <ul>
+                            <li><a href="#">Caixa</a></li>
+                            <li><a href="#">Contas a Pagar</a>
+                                <ul>
+                                    <li><a href='#'>Lançamentos</a></li>
+                                    <li><a href='#'>Baixa / Extorno</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>PDV</a>
+                        <ul>
+                            <li><a href="#">Bar</a></li>
+                            <li><a href="#">Cozinha</a></li>
+                            <li><a href="#">Mapa das Mesas</a></li>
+                            <li><a href="#">Venda de Balcã</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">RELATÓRIOS</a>
+                        <ul>
+                            <li><a href="#">Contas a Pagar</a></li>
+                            <li><a href="#">Fornecedores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#'>CONTATOS</a></li>
+                </ul>
+            </nav>
+            </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                        <h1 class="text-center">Acompanhamento</h1>
+                        <nav class="navbar navbar-expand-custom navbar-mainbg">
+                            <a class="navbar-brand navbar-logo" href="#"></a>
+                            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars text-white"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Incluir</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Alterar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Consultar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Excluir</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Confirmar</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Cancelar</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
 
-                        <li class="blog-drop-down">
-                            <a href="#">Contatos</a>
-                            <div class="Blog">
-                                <div class="blog-des">
-                                    <h4 class="blog-title">Ribeiro & Santos</h4>
-                                    <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
-                                    <p>(37) 99951-3044</p>
+                        <div class="row">
+                            <div class="col-12">
+                                <form class="form-control card-principal" id="for-cadastro">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="form-floating">
+                                                <input type="text" name="tcodigo" id="ccodigo" class="form-control" placeholder="Código" disabled/>
+                                                <label for="tcodigo">Código</label>
+                                            </div>
+
+                                            <div class="form-floating">
+                                                <input type="text" name="tdescicao" id="cdescricao" class="form-control" placeholder="Descrição do Acompanhamento" disabled/>
+                                                <label for="tdescicao" class="form-label">Descrição</label> 
+                                            </div>
+
+                                            <div class="form-floating">
+                                                <input  type="number" name="tvalor" id="cvalor" class="form-control" placeholder="Valor" disabled/>
+                                                <label for="tvalor" class="form-label">Valor</label>
+                                            </div>
+                                            
+                                            <div class="row cad-for-imagem">
+                                                <div class="col-9 cad-formulario">
+                                                    <div class="form-groupo">
+                                                        <fieldset><legend class="legenda">Acompanhamento Cadastrados</legend>
+                                                            <textarea class="form-group acom-textarea" name="grupos-cad" id="grupos-cad" disabled></textarea>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="col-3 cad-imagem">
+                                                    <div>
+                                                        <fieldset id="img-fomulario"><legend>Imagem</legend>
+                                                            <img src="imagens/sem-imagem.jpg" class="img-thumbnail" alt="Imagem não Existe">
+                                                            <button id="btn-busca" type="button" class="btn btn-primary btn-titulo" disabled>Buscar</button>
+
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="alert alert-danger d-none">
+                                                Preecha o campo <span id="campo-erro"></span>!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Caixa de Dialogue para excluir -->
+                    <div class="modal" id="modal-excluir">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="modal-title">Excluisão</div>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Deseja Realmente Excluir o Acompanhamento</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
+                                    <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
                                 </div>
                             </div>
-                        </li>
-    
-                    </ul>
-                </div>
-                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Type Something to Search..." required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </nav>
-        </div>
-        <section>
-            <form class="formulario">
-                <h1>Acompanhamento</h1>
-                <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
-                <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
-                <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
-                <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
-                <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
-                <fieldset id="for-legenda"><legend>Acompanhamento</legend>
-                    <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
-                    <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Acompanhamento"/></p>
-                    <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00"/></p>
-                    <div class="cad-for-img">
-                        <fieldset id="cad-fomulario"><legend>Acompanhamento Cadastrados</legend>
-                            <textarea></textarea>
-                        </fieldset>
-                        <fieldset id="img-fomulario"><legend>Imagem</legend>
-                            <img class="imagem-fomulario" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
-                            <button type="button">buscar</button>
-                        </fieldset>
+                        </div>
                     </div>
-                </fieldset>
-            </form>
-        </section>
+                </div>
+            </div>
+        </div>
+        <script src="js/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
