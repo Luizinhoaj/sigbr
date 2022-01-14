@@ -1,42 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
 
-    <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
-    <title>SIGBR - Login</title>
-</head>
-<body>
-    <div class="contanier"> <!-- inicio div geral -->
+        <link rel="stylesheet" href="css/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/css/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/login.css">
 
-        <div class="content first-content"> <!-- inicio da div content -->
-            <div class="first-column"> <!-- inicio da Primeira coluna -->
-                <div id="image">
-                    <h1 class="titulo-um">SIGBR</h1>
-                    <h2 class="sub-titulo">Sistema Gerenciador de Bar e Restaurantes</h2>
-                    </div>
-            </div>
+        <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
+        <title>SIGBR - Login</title>
+    </head>
+    <body>
+        <div class="contanier"> <!-- inicio div geral -->
 
-            <div class="second-column"> <!-- inicio da Segunda coluna -->
-                <h1 class="titulo-dois">Login</h1>
-                <form class="form">
-                    <label class="label-input" for="">
-                        <i class="fas fa-user-plus icon-modify"></i>
-                        <input type="usuario" placeholder="Usuário">
-                    </label>
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify" ></i>
-                        <input type="password" placeholder="Senha">
-                    </label>
-                    <button type="button" class="btn" onclick="window.location='principal.html'">Login</button>
-                </form>
+            <div class="content first-content"> <!-- inicio da div content -->
+                <div class="first-column"> <!-- inicio da Primeira coluna -->
+                    <div id="image">
+                        <h1 class="titulo-um">SIGBR</h1>
+                        <h2 class="sub-titulo">Sistema Gerenciador de Bar e Restaurantes</h2>
+                        </div>
+                </div>
+
+                <div class="second-column"> <!-- inicio da Segunda coluna -->
+                    <h1 class="titulo-dois">Login</h1>
+                    <form class="form-control card-principal" id="for-cadastro">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-floating">
+                                    <input type="text" name="tusuario" id="cusuario" class="form-control" placeholder="Usuario"/>
+                                    <label for="tusuario">Usuario</label>
+                                </div>
+
+                                <div class="form-floating">
+                                    <input type="password" name="tsenha" id="csenha" class="form-control" placeholder="Senha"/>
+                                    <label for="tsenha" class="form-label">Senha</label> 
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn" onclick="window.location='principal.html'">Login</button>
+                        <div class="alert alert-danger d-none">
+                            Preecha o campo <span id="campo-erro"></span>!
+                        </div>
+            </form>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
+        <script src="js/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
