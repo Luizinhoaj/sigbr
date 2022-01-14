@@ -147,19 +147,44 @@ form, .alert {
 	width: 300px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1150px){
     .sub-titulo{
         font-size: 12px;
     }    
+}
+
+@media only screen and (max-width: 1113px){
+
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 250px;
+    }    
+}
+
+@media only screen and (max-width: 961px){
+
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 200px;
+    }    
+
     div#image{
         height: 100%;
         background-image: url(../imagens/logo2.png);
         background-position: center center;
         background-repeat: no-repeat;
     }    
+
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 810px){
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 150px;
+    }    
+}
+
+@media only screen and (max-width: 680px){
     .first-column{
         display: none;
     }
