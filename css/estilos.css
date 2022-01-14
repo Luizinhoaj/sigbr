@@ -312,94 +312,7 @@ form, .alert {
 #cvalor{
 	width: 100px;
 }
-/*
-@media screen and (max-width: 950px){
-	.cad-for-imagem{
-		display: inline-block;
-	}
 
-	.cad-imagem{
-		width: 200px;
-		margin-bottom: 10px;
-		margin-left: 80px;
-	}
-	
-	.btn-batao{
-		margin: 15px 0px 0px 0px;
-	}
-	
-	.cad-formulario{
-		margin-left: 50%;
-	}
-}
-
-
-@media screen and (max-width: 850px){
-
-	.cad-formulario{
-		margin-left: 30px;
-	}
-
-}
-
-@media screen and (max-width: 767px){
-	
-	.btn-batao{
-		border: 1px solid black;
-		display: block;
-		text-align: left;
-	}	
-}
-
-@media screen and (max-width: 500px){
-
-	.cad-formulario{
-		margin-left: 30px;
-	}
-
-	.legenda{
-		font-size: 0.8em;
-	}
-
-	#cdescricao{
-		width: 250px;
-	}
-}
-
-@media screen and (max-width: 400px){
-
-	.cad-formulario{
-		margin-left: 50px;
-	}
-
-	.cad-imagem{
-		width: 200px;
-		margin-bottom: 10px;
-		margin-left: 40px;
-	}
-
-	.legenda{
-		font-size: 0.8em;
-	}
-
-	.card-principal > input{
-		font-size: 0.5em;
-	}
-
-	#ccodigo{
-		padding: 0px;
-	}
-	
-	#cdescricao{
-		padding: 0px;
-		width: 200px;
-	}
-	
-	#cvalor{
-		padding: 0px;
-	}
-}
-*/
 
 /* INICIO DO RESPONSIVEL */
 
@@ -421,10 +334,10 @@ form, .alert {
 	.menu .search-box input{
 	  padding: 0 100px 0 15px;
 	}
-	}
+}
 	
 	
-	@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
 	  .menu .menu-icon{
 		  display: block;
 		}
@@ -495,9 +408,9 @@ form, .alert {
 		  line-height: 30px;
 		  border-radius: 5px!important;
 		}
-	}
+}
 	
-	@media screen and (max-width: 700px){	
+@media screen and (max-width: 700px){	
 	  
 	  .clas-logo{
 		  position: absolute;
@@ -513,7 +426,8 @@ form, .alert {
 		  margin-left: 0px;
 	  }
 	  
-	}
+	  
+}
 	
 	
 	@media screen and (max-width: 400px){

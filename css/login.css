@@ -20,6 +20,10 @@
 	font-size: 1em;
 }
 
+.imagem-respo span{
+    display: none;
+}
+
 body{
     background: var(--cor-fundo);
     font-family: 'Noto Sans', sans-serif;
@@ -147,6 +151,8 @@ form, .alert {
 	width: 300px;
 }
 
+/* INICIO DO RESPONSIVEL  */
+
 @media only screen and (max-width: 1150px){
     .sub-titulo{
         font-size: 12px;
@@ -182,9 +188,23 @@ form, .alert {
         margin-bottom: 5px;
         width: 150px;
     }    
+
+    .card-principal{
+        margin-left: 12px;
+    }
+           
+    .imagem-respo span{
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 680px){
+    
+    .imagem-respo{
+
+    }
+
     .first-column{
         display: none;
     }
