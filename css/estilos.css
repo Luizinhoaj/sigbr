@@ -430,7 +430,7 @@ form, .alert {
 }
 	
 	
-	@media screen and (max-width: 400px){
+	@media screen and (max-width: 530px){
 	
 	  nav .content .links{
 		  display: block;
@@ -467,5 +467,10 @@ form, .alert {
 	
 		.menu .search-box input{
 		  padding-right: 30px;
-		}	
+		}
+
+		.image-logo{
+			margin-top: 50px;
+		} 
+
 	}
