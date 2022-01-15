@@ -71,11 +71,11 @@ function habilitarbotao() {
     document.getElementById("btn-busca").disabled = 0;
   }
 
-  document.getElementById("btn-incl").disabled = 1;
-  document.getElementById("btn-alte").disabled = 1;
-  document.getElementById("btn-excl").disabled = 1;
-  document.getElementById("btn-conf").disabled = 0;
-  document.getElementById("btn-canc").disabled = 0;
+  document.getElementById("btnincluir").disabled = 1;
+  document.getElementById("btnalterar").disabled = 1;
+  document.getElementById("btnexcluir").disabled = 1;
+  document.getElementById("btnconfirmar").disabled = 0;
+  document.getElementById("btncancelar").disabled = 0;
 }
 
 function desabilitarbotao() {
@@ -83,11 +83,11 @@ function desabilitarbotao() {
     document.getElementById("btn-busca").disabled = 1;
   }
 
-  document.getElementById("btn-incl").disabled = 0;
-  document.getElementById("btn-alte").disabled = 0;
-  document.getElementById("btn-excl").disabled = 0;
-  document.getElementById("btn-conf").disabled = 1;
-  document.getElementById("btn-canc").disabled = 1;
+  document.getElementById("btnincluir").disabled = 0;
+  document.getElementById("btnalterar").disabled = 0;
+  document.getElementById("btnexcluir").disabled = 0;
+  document.getElementById("btnconfirmar").disabled = 1;
+  document.getElementById("btncancelar").disabled = 1;
 }
 
 

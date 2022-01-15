@@ -7,111 +7,121 @@
 
         <link rel="stylesheet" href="css/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/css/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="css/principal.css">
         <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/bootsnav.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
-
         <title>SIGBR - Acompanhamento</title>
-
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <nav id='cssmenu'>
-                <div class="logo">
-                    <a href="index.html">SIGBR</a>
-                </div>
-                <div id="head-mobile">
-
-                </div>
-                <div class="button">
-
-                </div>
-                <ul>
-                    <li class='active'><a href='#'>HOME</a></li>
-                    <li><a href='#'>CADASTRO</a>
-                        <ul>
-                            <li><a onclick="carregaacompa()"  href="#">Acompanhamento</a></li>
-                            <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
-                            <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
-                            <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
-                            <li><a onclick="carregaprodutos()"  href="#">Produtos</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a onclick="carregamesa()" href="#">Mesa</a></li>
-                            <li><a href="#">Setor</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
-                            <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
-                            <li><a href="#">Usuário</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='#'>FINACEIRO</a>
-                        <ul>
-                            <li><a href="#">Caixa</a></li>
-                            <li><a href="#">Contas a Pagar</a>
+            <div class="menu">
+                <nav>
+                    <input type="checkbox" id="show-search">
+                    <input type="checkbox" id="show-menu">
+                    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                    <div class="content">
+                        <div class="logo"><a href="#">SIGBR</a></div>
+                        <ul class="links">
+                            <li><a onclick="carregahome()" href="#">Home</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">Cadastro</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">Cadastro</label>
                                 <ul>
-                                    <li><a href='#'>Lançamentos</a></li>
-                                    <li><a href='#'>Baixa / Extorno</a></li>
+                                    <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
+                                    <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
+                                    <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
+                                    <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
+                                    <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
+                                    <li><a onclick="carregamesa()" href="#">Mesa</a></li>
+                                    <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
+                                    <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
+                                    <li><a href="#">Setores</a></li>
+                                    <li><a href="#">Usuário</a></li>
                                 </ul>
                             </li>
-                        </ul>
-                    </li>
-                    <li><a href='#'>PDV</a>
-                        <ul>
-                            <li><a href="#">Bar</a></li>
-                            <li><a href="#">Cozinha</a></li>
-                            <li><a href="#">Mapa das Mesas</a></li>
-                            <li><a href="#">Venda de Balcão</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">RELATÓRIOS</a>
-                        <ul>
-                            <li><a href="#">Contas a Pagar</a></li>
-                            <li><a href="#">Fornecedores</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='#'>CONTATOS</a></li>
-                </ul>
-            </nav>
-            </header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                        <h1 class="text-center">Acompanhamento</h1>
-                        <nav class="navbar navbar-expand-custom navbar-mainbg">
-                            <a class="navbar-brand navbar-logo" href="#"></a>
-                            <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars text-white"></i>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i>Incluir</a>
-                                    </li>
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i>Alterar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i>Consultar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Excluir</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i>Confirmar</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Cancelar</a>
+
+                            <li>
+                                <a href="#" class="desktop-link">Financeiro</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Financeiro</label>
+                                <ul>
+                                    <li><a href="#">Caixa</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Conta a Pagar</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Conta a Pagar</label>
+                                        <ul>
+                                            <li><a href="#">Lançamentos</a></li>
+                                            <li><a href="#">Baixa / Extorno</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
-                            </div>
-                        </nav>
+                            </li>
 
-                        <div class="row">
-                            <div class="col-12">
-                                <form class="form-control card-principal" id="for-cadastro">
+                            <li>
+                                <a href="#" class="desktop-link">PDV</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">PDV</label>
+                                <ul>
+                                    <li><a href="#">Bar</a></li>
+                                    <li><a href="#">Cozinha</a></li>
+                                    <li><a href="#">Mapa das Mesas</a></li>
+                                    <li><a href="#">Venda de Balcão</a></li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <a href="#" class="desktop-link">Relatórios</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Relatórios</label>
+                                <ul>
+                                    <li><a href="#">Contas a Pagar</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Fornecedores</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Fornecedores</label>
+                                        <ul>
+                                            <li><a href="#">Ordem Alfabética</a></li>
+                                            <li><a href="#">Ordem de Código</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="blog-drop-down">
+                                <a href="#">Contatos</a>
+                                <div class="Blog">
+                                    <div class="blog-des">
+                                        <h4 class="blog-title">Ribeiro & Santos</h4>
+                                        <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
+                                        <p>(37) 99951-3044</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+                    <form action="#" class="search-box">
+                        <input type="text" placeholder="Type Something to Search..." required>
+                        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+                    </form>
+                </nav>
+            </div>
+        </header>
+        <div class="container">     <!-- Inicio da div container -->
+            <div class="row">       <!-- Inicio da div row -->
+                <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
+                    <h1 class="text-center">Acompanhamento</h1>
+                    <div class="row">       <!-- Inicio da div row Formulario -->
+                        <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
+                            <form class="form-control card-principal" id="for-cadastro">
+                                <div class="card">
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="form-floating">
@@ -143,7 +153,6 @@
                                                         <fieldset id="img-fomulario"><legend>Imagem</legend>
                                                             <img src="imagens/sem-imagem.jpg" class="img-thumbnail" alt="Imagem não Existe">
                                                             <button id="btn-busca" type="button" class="btn btn-primary btn-titulo" disabled>Buscar</button>
-
                                                         </fieldset>
                                                     </div>
                                                 </div>
@@ -153,32 +162,39 @@
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="menu-for">
+                                        <nav>
+                                            <button id="btnincluir" type="button" class="btn btn-primary btn-titulo" onclick="incluirregistro()">Incluir</button>
+                                            <button id="btnalterar" type="button" class="btn btn-primary btn-titulo" onclick="incluirregistro()">Alterar</button>
+                                            <button id="btnexcluir" type="button" class="btn btn-primary btn-titulo">Excluir</button>
+                                            <button id="btnconfirmar" type="button" class="btn btn-primary btn-titulo" disabled>Confirmar</button>
+                                            <button id="btncancelar" type="button" class="btn btn-primary btn-titulo" onclick="cancelaregistro()" disabled>Cancelar</button>
+                                        </nav>
+                                    </div>
+                                </div>  
+                            </form>
+                        </div>  <!-- Fim da div col 12 Formulario -->
+                    </div>>     <!-- Fim da div row Formulario -->
+                </div>  <!-- Fim da div col md 12 -->
+                <div class="modal" id="modal-excluir">   <!-- Caixa de Dialogue para excluir -->
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal-title">Excluisão</div>
+                                <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Deseja Realmente Excluir o Acompanhamento</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
+                                <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Caixa de Dialogue para excluir -->
-                    <div class="modal" id="modal-excluir">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <div class="modal-title">Excluisão</div>
-                                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Deseja Realmente Excluir o Acompanhamento</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
-                                    <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </div>                
+            </div>   <!-- Fim da div row -->
+        </div>      <!-- Fim da div container -->     
         <script src="js/js/jquery-3.4.1.slim.min.js"></script>
         <script src="js/js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>

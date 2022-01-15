@@ -24,7 +24,6 @@ body{
     background: var(--cor-fundo);
 }
 
-
 /* INICIO DO MENU */
 
 .menu{
@@ -246,7 +245,7 @@ nav .content .links{
 }
 
 
-/* INICIO DO FORMULARIO */
+/*  INICIO DO FOMULARIO CADASTRO */
 
 .container h1{
 	color: var(--cor-fonte);
@@ -255,9 +254,14 @@ nav .content .links{
 	font-family: var(--fonte-geral);
 }
 
+.container-for{
+	margin-top: 80px;
+	width: 70%;
+	margin-left: 150px;
+}
 .card-principal{
-	background: var(--cor-fundo);
-	border-radius: 10px;	
+	background: var(--cor-menu);
+	border-radius: 10px;
 }
 
 .card{
@@ -276,6 +280,101 @@ legend{
 	padding: 5px;
 }
 
+form, .alert {
+	margin-bottom: 0;
+}
+
+.cad-for-imagem{
+	margin-top: 10px;
+}
+
+.acom-textarea{
+	width: 100%;
+	height: 170px;
+}
+
+.cad-imagem {
+	text-align: center;
+}
+
+.img-thumbnail{
+	width: 150px;
+	margin-bottom: 5px;
+}
+
+#ccodigo{
+	margin-bottom: 5px;
+	width: 100px;
+}
+
+#cdescricao{
+	margin-bottom: 5px;
+	width: 400px;
+}
+
+#cvalor{
+	width: 100px;
+}
+
+.menu-for{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/*
+
+nav ul a:hover {
+	 background-color: var(--cor-hover);
+}
+
+.nav-item a:hover {
+	background-color: var(--cor-hover);
+
+}
+
+.nav-botao{
+	text-align: center;
+}
+
+.btn-batao{
+	margin: 15px 0px 0px 0px;
+	text-align: center;
+}
+
+.btn-titulo{
+	margin-left: 10px;
+}
+
+#navbarSupportedContent{
+	font-size: 1.2em;
+}
+
+
+.dropdown-item{
+	padding: 10px;
+}
+
+.card-principal{
+	background: var(--cor-submenu);
+	border-radius: 10px;	
+}
+
+.card{
+	box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
+	margin: 15px;
+}
+
+.form-group{
+	width: 100vw;
+	height: 100px;
+	resize: none;
+}
+
+legend{
+	font-size: 1em;
+	padding: 5px;
+}
+ 
 form, .alert {
 	margin-bottom: 0;
 }
@@ -312,6 +411,94 @@ form, .alert {
 #cvalor{
 	width: 100px;
 }
+
+@media screen and (max-width: 950px){
+	.cad-for-imagem{
+		display: inline-block;
+	}
+
+	.cad-imagem{
+		width: 200px;
+		margin-bottom: 10px;
+		margin-left: 80px;
+	}
+	
+	.btn-batao{
+		margin: 15px 0px 0px 0px;
+	}
+	
+	.cad-formulario{
+		margin-left: 50%;
+	}
+}
+
+
+@media screen and (max-width: 850px){
+
+	.cad-formulario{
+		margin-left: 30px;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	
+	.btn-batao{
+		border: 1px solid black;
+		display: block;
+		text-align: left;
+	}	
+}
+
+@media screen and (max-width: 500px){
+
+	.cad-formulario{
+		margin-left: 30px;
+	}
+
+	.legenda{
+		font-size: 0.8em;
+	}
+
+	#cdescricao{
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.cad-formulario{
+		margin-left: 50px;
+	}
+
+	.cad-imagem{
+		width: 200px;
+		margin-bottom: 10px;
+		margin-left: 40px;
+	}
+
+	.legenda{
+		font-size: 0.8em;
+	}
+
+	.card-principal > input{
+		font-size: 0.5em;
+	}
+
+	#ccodigo{
+		padding: 0px;
+	}
+	
+	#cdescricao{
+		padding: 0px;
+		width: 200px;
+	}
+	
+	#cvalor{
+		padding: 0px;
+	}
+}
+*/
 
 
 /* INICIO DO RESPONSIVEL */
@@ -429,48 +616,47 @@ form, .alert {
 	  
 }
 	
+@media screen and (max-width: 530px){
 	
-	@media screen and (max-width: 530px){
-	
-	  nav .content .links{
-		  display: block;
-		  position: fixed;
-		  background: var(--cor-submenu);
-		  height: 100%;
-		  width: 80%;
-		  top: 70px;
-		  left: -100%;
-		  margin-left: 0;
-		  max-width: 350px;
-		  overflow-y: auto;
-		  padding-bottom: 100px;
-		  transition: all 0.3s ease;
-		  font-size: 14px;
-		}
-	
-	  .menu nav{
-		  padding: 0 10px;
-		}
-	
-	  .content .logo a{
-		  font-size: 2em;
-		}
-	
-		.menu .search-box{
-		  max-width: calc(100% - 70px);
-		}
-	
-	  .menu .search-box .go-icon{
-		  width: 30px;
-		  right: 0;
-	  }
-	
-		.menu .search-box input{
-		  padding-right: 30px;
-		}
-
-		.image-logo{
-			margin-top: 50px;
-		} 
-
+	nav .content .links{
+		display: block;
+		position: fixed;
+		background: var(--cor-submenu);
+		height: 100%;
+		width: 80%;
+		top: 70px;
+		left: -100%;
+		margin-left: 0;
+		max-width: 350px;
+		overflow-y: auto;
+		padding-bottom: 100px;
+		transition: all 0.3s ease;
+		font-size: 14px;
 	}
+	
+	.menu nav{
+		padding: 0 10px;
+	}
+	
+	.content .logo a{
+		font-size: 2em;
+	}
+	
+	.menu .search-box{
+		max-width: calc(100% - 70px);
+	}
+	
+	.menu .search-box .go-icon{
+		width: 30px;
+		right: 0;
+	}
+	
+	.menu .search-box input{
+		padding-right: 30px;
+	}
+
+	.image-logo{
+		margin-top: 50px;
+	} 
+
+}
