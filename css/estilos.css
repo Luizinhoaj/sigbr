@@ -495,10 +495,15 @@ form, .alert {
 		width: 250px;
 	}
 
+	.card{
+		margin: 10px;
+	}
+	
 	#cdescricao{
 		width: 250px;
 		font-size: 0.9em;
 	}
+
 	.clas-logo{
 		position: absolute;
 		top: 20%;
@@ -517,9 +522,10 @@ form, .alert {
 		padding: 2px;
 	}
 
-	.cad-imagem{
-		width: 200px;
+	.container h1{
+		font-size: 1.5em;
 	}
+	
 
 	.logo{
 		margin-left: 20vw;
@@ -555,4 +561,23 @@ form, .alert {
 		margin-top: 50px;
 	} 
 
+}
+
+@media screen and (max-width: 500px){
+	.legenda{
+		font-size: 0.6em;
+	}
+
+	#cdescricao{
+		width: 200px;
+		font-size: 0.7em;
+	}
+
+	#cvalor, #ccodigo{
+		font-size: 0.7em;
+	}
+	
+	.card label, .img-fomulario{
+		font-size: 0.8em;
+	}
 }
