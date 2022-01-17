@@ -213,32 +213,32 @@ nav .content .links{
 }
 
 .image-logo{
-  display: block;
-  margin-top: 0px;
+	display: block;
+	margin-top: 0px;
 	width: 400px;
 }
 
 .Blog{
-  display:none;
-  width: 200px;
-  height: 250px;
-  margin: 50px auto 0 auto;
-  color: var(--cor-fonte);
-  padding-top:15px;
-  background:var(--cor-submenu);
+	display:none;
+	width: 200px;
+	height: 250px;
+	margin: 50px auto 0 auto;
+	color: var(--cor-fonte);
+	padding-top:15px;
+	background:var(--cor-submenu);
 	padding-bottom:15px;
 }
 
 .Blog .blog-title{
-  color:var(--fonte-geral);
+	color:var(--fonte-geral);
 	font-size:15px;
 	text-transform:uppercase;
 }
 
 .Blog .blog-des{
-  color: var(--fonte-geral);
-  font-size: 90%;
-  text-align: center;
+	color: var(--fonte-geral);
+	font-size: 90%;
+	text-align: center;
 }
 
 .blog-drop-down > a:hover+.Blog{
@@ -487,12 +487,12 @@ form, .alert {
 	
 @media screen and (max-width: 768px){	
 	  
-	.nav-botao{
-		position: relative;
-		display: flex;
-		margin: 0 auto;
-		height: 70px;
-		align-items: center;
+	.cad-for-imagem{
+		display: block;
+	}
+	
+	.cad-imagem{
+		width: 250px;
 	}
 
 	#cdescricao{
@@ -506,13 +506,7 @@ form, .alert {
 		z-index: 10;
 		text-align: right;
 	}
-	  
-	.image-logo{
-		margin-top: 0px;
-		width: 80%;
-		margin-left: 0px;
-	}
- 
+	   
 }
 	
 @media screen and (max-width: 600px){
@@ -520,13 +514,19 @@ form, .alert {
 	#btnincluir, #btnalterar, #btnexcluir, 
 	#btnconfirmar, #btncancelar{
 		font-size: 60%;
+		padding: 2px;
+	}
+
+	.cad-imagem{
+		width: 200px;
+	}
+
+	.logo{
+		margin-left: 20vw;
 	}
 
 	.nav-botao{
-		position: relative;
-		display: flex;
-		margin: 0 auto;
-		height: 70px;
+		height: 40px;
 		align-items: center;
 	}
 	
