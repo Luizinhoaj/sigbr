@@ -34,8 +34,8 @@ body{
 }
 
 .menu nav{
-  position: relative;
-  display: flex;
+  	position: relative;
+  	display: flex;
 	max-width: calc(100% - 200px);
 	margin: 0 auto;
 	height: 70px;
@@ -44,29 +44,29 @@ body{
 }
 
 nav .content{
-  display: flex;
+  	display: flex;
 	align-items: center;
 }
 
 nav .content .links{
-  margin-left: 80px;
-  display: flex;
+  	margin-left: 80px;
+  	display: flex;
 }
 
 .content .logo a{
-  color: var(--cor-fonte);
-  font-size: 30px;
-  font-weight: 600;
+  	color: var(--cor-fonte);
+	font-size: 30px;
+  	font-weight: 600;
 }
 
 .content .links li{
-  list-style: none;
-  line-height: 70px;
+	list-style: none;
+	line-height: 70px;
 }
 
 .content .links li a,
 .content .links li label{
-  color: var(--cor-fonte);
+	  color: var(--cor-fonte);
 	font-size: 16px;
 	font-weight: 500;
 	padding: 9px 17px;
@@ -75,11 +75,12 @@ nav .content .links{
 }
 
 .content .links li label{
-  display: none;
+	display: none;
 }
+
 .content .links li a:hover,
 .content .links li label:hover{
-  background: var(--cor-hover);
+  	background: var(--cor-hover);
 }
 
 .menu .search-icon,
@@ -89,7 +90,7 @@ nav .content .links{
 	cursor: pointer;
 	line-height: 70px;
 	width: 70px;
-  text-align: center;
+  	text-align: center;
 }
 
 .menu .menu-icon{
@@ -247,6 +248,10 @@ nav .content .links{
 
 /*  INICIO DO FOMULARIO CADASTRO */
 
+.container p{
+	margin: 0px;
+}
+
 .container h1{
 	color: var(--cor-fonte);
 	margin: 10px;
@@ -255,10 +260,11 @@ nav .content .links{
 }
 
 .container-for{
+	margin: 0 auto;
 	margin-top: 80px;
-	width: 70%;
-	margin-left: 150px;
+	width: 900px;
 }
+
 .card-principal{
 	background: var(--cor-menu);
 	border-radius: 10px;
@@ -303,17 +309,24 @@ form, .alert {
 }
 
 #ccodigo{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+
+}
+
+#cvalor, #ccodigo{
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
 	width: 100px;
+	text-align: right;
 }
 
 #cdescricao{
-	margin-bottom: 5px;
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
 	width: 400px;
-}
-
-#cvalor{
-	width: 100px;
 }
 
 .menu-for{
@@ -321,210 +334,71 @@ form, .alert {
 	margin-bottom: 10px;
 }
 
-/*
-
-nav ul a:hover {
-	 background-color: var(--cor-hover);
+#btnincluir, #btnalterar, #btnexcluir, #btnconfirmar, #btncancelar{
+	background-color: var(--cor-menu);
 }
 
-.nav-item a:hover {
-	background-color: var(--cor-hover);
-
-}
+/* MENU FORMULARIO */
 
 .nav-botao{
-	text-align: center;
+	position: relative;
+	display: flex;
+  	max-width: calc(100% - 300px);
+	margin: 0 auto;
+	height: 70px;
+	align-items: center;
 }
 
-.btn-batao{
-	margin: 15px 0px 0px 0px;
-	text-align: center;
-}
-
-.btn-titulo{
-	margin-left: 10px;
-}
-
-#navbarSupportedContent{
-	font-size: 1.2em;
-}
-
-
-.dropdown-item{
+#btnincluir, #btnalterar, #btnexcluir,
+#btnconfirmar, #btncancelar{
+	color: var(--cor-fonte);
+	font-size: 16px;
+	font-weight: 500;
+	padding: 9px 17px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
 	padding: 10px;
+	background-color: var(--cor-menu);
+	margin: 5px 5px 5px 0px;
 }
 
-.card-principal{
-	background: var(--cor-submenu);
-	border-radius: 10px;	
+#btnincluir:hover, #btnalterar:hover, #btnexcluir:hover, 
+#btnconfirmar:hover, #btncancelar:hover{
+  background: var(--cor-hover);
 }
-
-.card{
-	box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
-	margin: 15px;
-}
-
-.form-group{
-	width: 100vw;
-	height: 100px;
-	resize: none;
-}
-
-legend{
-	font-size: 1em;
-	padding: 5px;
-}
- 
-form, .alert {
-	margin-bottom: 0;
-}
-
-.cad-for-imagem{
-	box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.4);
-	margin-top: 10px;
-}
-
-.acom-textarea{
-	width: 100%;
-	height: 170px;
-}
-
-.cad-imagem {
-	text-align: center;
-}
-
-.img-thumbnail{
-	width: 150px;
-	margin-bottom: 5px;
-}
-
-#ccodigo{
-	margin-bottom: 5px;
-	width: 100px;
-}
-
-#cdescricao{
-	margin-bottom: 5px;
-	width: 400px;
-}
-
-#cvalor{
-	width: 100px;
-}
-
-@media screen and (max-width: 950px){
-	.cad-for-imagem{
-		display: inline-block;
-	}
-
-	.cad-imagem{
-		width: 200px;
-		margin-bottom: 10px;
-		margin-left: 80px;
-	}
-	
-	.btn-batao{
-		margin: 15px 0px 0px 0px;
-	}
-	
-	.cad-formulario{
-		margin-left: 50%;
-	}
-}
-
-
-@media screen and (max-width: 850px){
-
-	.cad-formulario{
-		margin-left: 30px;
-	}
-
-}
-
-@media screen and (max-width: 767px){
-	
-	.btn-batao{
-		border: 1px solid black;
-		display: block;
-		text-align: left;
-	}	
-}
-
-@media screen and (max-width: 500px){
-
-	.cad-formulario{
-		margin-left: 30px;
-	}
-
-	.legenda{
-		font-size: 0.8em;
-	}
-
-	#cdescricao{
-		width: 250px;
-	}
-}
-
-@media screen and (max-width: 400px){
-
-	.cad-formulario{
-		margin-left: 50px;
-	}
-
-	.cad-imagem{
-		width: 200px;
-		margin-bottom: 10px;
-		margin-left: 40px;
-	}
-
-	.legenda{
-		font-size: 0.8em;
-	}
-
-	.card-principal > input{
-		font-size: 0.5em;
-	}
-
-	#ccodigo{
-		padding: 0px;
-	}
-	
-	#cdescricao{
-		padding: 0px;
-		width: 200px;
-	}
-	
-	#cvalor{
-		padding: 0px;
-	}
-}
-*/
 
 
 /* INICIO DO RESPONSIVEL */
 
-/* Responsive code start */
-@media screen and (max-width: 1250px){
+
+@media screen and (max-width: 950px){
+
 	.menu nav{
 	  max-width: 100%;
-	  padding: 0 20px;
+	  padding: 0px 20px;
 	}
+
 	nav .content .links{
 	  margin-left: 30px;
 	}
+
 	.content .links li a{
 	  padding: 8px 13px;
 	}
+
 	.menu .search-box{
 	  max-width: calc(100% - 100px);
 	}
+	
 	.menu .search-box input{
 	  padding: 0 100px 0 15px;
 	}
+	
 }
-	
-	
+
 @media screen and (max-width: 800px){
+
 	  .menu .menu-icon{
 		  display: block;
 		}
@@ -533,25 +407,35 @@ form, .alert {
 		  content: "\f00d";
 		}
 	
-	  nav .content .links{
-		  display: block;
-		  position: fixed;
-		  background: var(--cor-submenu);
-		  height: 100%;
-		  width: 100%;
-		  top: 70px;
-		  left: -100%;
-		  margin-left: 0;
-		  max-width: 350px;
-		  overflow-y: auto;
-		  padding-bottom: 100px;
-		  transition: all 0.3s ease;
+		.menu nav{
+			position: relative;
+			display: inline-flex;
+	  	}
+	  	
+		.logo{
+			margin-left: 35vw;
 		}
-	
+
 		nav #show-menu:checked ~ .content .links{
-		  left: 0%;
+			left: 0%;
+		}
+
+		nav .content .links{
+			display: block;
+			position: fixed;
+			background: var(--cor-submenu);
+			height: 100%;
+			width: 100%;
+			top: 70px;
+			left: -100%;
+			margin-left: 0;
+			max-width: 350px;
+			overflow-y: auto;
+			padding-bottom: 100px;
+			transition: all 0.3s ease;
 		}
 	
+
 	  .content .links li{
 		  margin: 15px 20px;
 		}
@@ -597,26 +481,29 @@ form, .alert {
 		}
 }
 	
-@media screen and (max-width: 700px){	
+@media screen and (max-width: 768px){	
 	  
-	  .clas-logo{
-		  position: absolute;
-		  top: 20%;
-		  left: 20%;
-		  z-index: 10;
-		  text-align: right;
-	  }
+	#cdescricao{
+		width: 250px;
+		font-size: 0.9em;
+	}
+	.clas-logo{
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		z-index: 10;
+		text-align: right;
+	}
 	  
-	  .image-logo{
-		  margin-top: 0px;
-		  width: 80%;
-		  margin-left: 0px;
-	  }
-	  
-	  
+	.image-logo{
+		margin-top: 0px;
+		width: 80%;
+		margin-left: 0px;
+	}
+ 
 }
 	
-@media screen and (max-width: 530px){
+@media screen and (max-width: 600px){
 	
 	nav .content .links{
 		display: block;
