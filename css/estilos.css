@@ -526,8 +526,11 @@ form, .alert {
 		font-size: 1.5em;
 	}
 	
-
-	.logo{
+	.image-logo{
+		width: 300px;
+	}
+	
+	.image-zap{
 		margin-left: 20vw;
 	}
 
@@ -564,6 +567,7 @@ form, .alert {
 }
 
 @media screen and (max-width: 500px){
+
 	.legenda{
 		font-size: 0.6em;
 	}
@@ -571,6 +575,18 @@ form, .alert {
 	#cdescricao{
 		width: 200px;
 		font-size: 0.7em;
+	}
+
+	.clas-logo{
+		align-items: center;
+	}
+
+	.logo{
+		margin-left: 25vw;
+	}
+
+	.image-logo{
+		width: 80%;
 	}
 
 	#cvalor, #ccodigo{
