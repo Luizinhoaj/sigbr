@@ -340,10 +340,14 @@ form, .alert {
 
 /* MENU FORMULARIO */
 
+.menu-for{
+	margin: 0px auto;
+	text-align: center;
+}
+
 .nav-botao{
 	position: relative;
 	display: flex;
-  	max-width: calc(100% - 300px);
 	margin: 0 auto;
 	height: 70px;
 	align-items: center;
@@ -352,7 +356,7 @@ form, .alert {
 #btnincluir, #btnalterar, #btnexcluir,
 #btnconfirmar, #btncancelar{
 	color: var(--cor-fonte);
-	font-size: 16px;
+	font-size: 100%;
 	font-weight: 500;
 	padding: 9px 17px;
 	border-radius: 5px;
@@ -483,6 +487,14 @@ form, .alert {
 	
 @media screen and (max-width: 768px){	
 	  
+	.nav-botao{
+		position: relative;
+		display: flex;
+		margin: 0 auto;
+		height: 70px;
+		align-items: center;
+	}
+
 	#cdescricao{
 		width: 250px;
 		font-size: 0.9em;
@@ -505,20 +517,17 @@ form, .alert {
 	
 @media screen and (max-width: 600px){
 	
-	nav .content .links{
-		display: block;
-		position: fixed;
-		background: var(--cor-submenu);
-		height: 100%;
-		width: 80%;
-		top: 70px;
-		left: -100%;
-		margin-left: 0;
-		max-width: 350px;
-		overflow-y: auto;
-		padding-bottom: 100px;
-		transition: all 0.3s ease;
-		font-size: 14px;
+	#btnincluir, #btnalterar, #btnexcluir, 
+	#btnconfirmar, #btncancelar{
+		font-size: 60%;
+	}
+
+	.nav-botao{
+		position: relative;
+		display: flex;
+		margin: 0 auto;
+		height: 70px;
+		align-items: center;
 	}
 	
 	.menu nav{
