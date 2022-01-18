@@ -4,177 +4,211 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/principal.css">
-        <link rel="stylesheet" href="css/fornecedores.css">
+        
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/estilos.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
         <title>SIGBR - Adicional</title>
+
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="menu">
-            <nav>
-                <input type="checkbox" id="show-search">
-                <input type="checkbox" id="show-menu">
-                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-                <div class="content">
-                    <div class="logo"><a href="#">SIGBR</a></div>
-                    <ul class="links">
-                        <li><a onclick="carregahome()" href="#">Home</a></li>
-                        <li>
-                            <a href="#" class="desktop-link">Cadastro</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">Cadastro</label>
-                            <ul>
-                                <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
-                                <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
-                                <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
-                                <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
-                                <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
-                                <li><a onclick="carregamesa()" href="#">Mesa</a></li>
-                                <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
-                                <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
-                                <li><a href="#">Setores</a></li>
-                                <li><a href="#">Usuário</a></li>
-                            </ul>
-                        </li>
+        <header>
+            <div class="menu">
+                <nav>
+                    <input type="checkbox" id="show-search">
+                    <input type="checkbox" id="show-menu">
+                    <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                    <div class="content">
+                        <div class="logo"><a href="#">SIGBR</a></div>
+                        <ul class="links">
+                            <li><a onclick="carregahome()" href="#">Home</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">Cadastro</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">Cadastro</label>
+                                <ul>
+                                    <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
+                                    <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
+                                    <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
+                                    <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
+                                    <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
+                                    <li><a onclick="carregamesa()" href="#">Mesa</a></li>
+                                    <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
+                                    <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
+                                    <li><a href="#">Setores</a></li>
+                                    <li><a href="#">Usuário</a></li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#" class="desktop-link">Financeiro</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Financeiro</label>
-                            <ul>
-                                <li><a href="#">Caixa</a></li>
-                                <li>
-                                    <a href="#" class="desktop-link">Conta a Pagar</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Conta a Pagar</label>
-                                    <ul>
-                                        <li><a href="#">Lançamentos</a></li>
-                                        <li><a href="#">Baixa / Extorno</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                            <li>
+                                <a href="#" class="desktop-link">Financeiro</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Financeiro</label>
+                                <ul>
+                                    <li><a href="#">Caixa</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Conta a Pagar</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Conta a Pagar</label>
+                                        <ul>
+                                            <li><a href="#">Lançamentos</a></li>
+                                            <li><a href="#">Baixa / Extorno</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#" class="desktop-link">PDV</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">PDV</label>
-                            <ul>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Cozinha</a></li>
-                                <li><a href="#">Mapa das Mesas</a></li>
-                                <li><a href="#">Venda de Balcão</a></li>
-                            </ul>
-                        </li>
-                
-                        <li>
-                            <a href="#" class="desktop-link">Relatórios</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Relatórios</label>
-                            <ul>
-                                <li><a href="#">Contas a Pagar</a></li>
-                                <li>
-                                   <a href="#" class="desktop-link">Fornecedores</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Fornecedores</label>
-                                    <ul>
-                                        <li><a href="#">Ordem Alfabética</a></li>
-                                        <li><a href="#">Ordem de Código</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="blog-drop-down">
-                            <a href="#">Contatos</a>
-                            <div class="Blog">
-                                <div class="blog-des">
-                                    <h4 class="blog-title">Ribeiro & Santos</h4>
-                                    <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
-                                    <p>(37) 99951-3044</p>
+                            <li>
+                                <a href="#" class="desktop-link">PDV</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">PDV</label>
+                                <ul>
+                                    <li><a href="#">Bar</a></li>
+                                    <li><a href="#">Cozinha</a></li>
+                                    <li><a href="#">Mapa das Mesas</a></li>
+                                    <li><a href="#">Venda de Balcão</a></li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <a href="#" class="desktop-link">Relatórios</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Relatórios</label>
+                                <ul>
+                                    <li><a href="#">Contas a Pagar</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Fornecedores</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Fornecedores</label>
+                                        <ul>
+                                            <li><a href="#">Ordem Alfabética</a></li>
+                                            <li><a href="#">Ordem de Código</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="blog-drop-down">
+                                <a href="#">Contatos</a>
+                                <div class="blog">
+                                    <div class="blog-des">
+                                        <h4 class="blog-title">Ribeiro & Santos</h4>
+                                        <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp">
+                                        <h4>(37) 99951-3044</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-    
-                    </ul>
-                </div>
-                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Type Something to Search..." required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </nav>
-        </div>
-        <section>
-            <form class="formulario">
-                <h1>Fornecedores</h1>
-                <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
-                <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
-                <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
-                <button type="button" class="btnpesquisa" onclick="window.location='#'">Pesquisar</button>
-                <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
-                <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
-                <fieldset id="for-legenda">
-                    <p>
-                        <label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/>
-                        <label for="cnome">Nome :</label><input type="text" name="tnome" id="cnome" placeholder="Nome"/>
-                    </p>
-                    <p>
-                        <label for="cend">Endereço :</label> <input type="text" name="tend" id="cend" placeholder="Endereço"/>
-                        <label for="cnum">Numero :</label> <input type="number" name="tnum" id="cnum" placeholder="000"/>
-                        <label for="ccomp">Complemento :</label> <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
-                    </p>
-                    <p>
-                        <label for="cbairro">Bairro :</label> <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
-                        <label for="ccep">CEP :</label> <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
-                        <label for="ccidade">Cidade :</label> <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
-                    </p>
-                    <div class="for-est-fone">
-                        <fieldset id="cestado"><legend>Estado</legend>
-                            <select id=cbtipo>
-                                <option>Seleciona o Estado</option>
-                                <option>Acre</option>
-                                <option>Alagoas</option>
-                                <option>Amapá</option>
-                                <option>Amazonas</option>
-                                <option>Bahia</option>
-                                <option>Ceará</option>
-                                <option>Distrito Federal</option>
-                                <option>Espírito Santo</option>
-                                <option>Goiás</option>
-                                <option>Maranhão</option>
-                                <option>Mato Grosso</option>
-                                <option>Mato Grosso do Sul</option>
-                                <option>Minas Gerais</option>
-                                <option>Pará</option>
-                                <option>Paraíba</option>
-                                <option>Paraná</option>
-                                <option>Pernambuco</option>
-                                <option>Piauí</option>
-                                <option>Rio de Janeiro</option>
-                                <option>Rio Grande do Norte</option>
-                                <option>Rio Grande do Sul</option>
-                                <option>Rondônia</option>
-                                <option>Roraima</option>
-                                <option>Santa Catarina</option>
-                                <option>São Paulo</option>
-                                <option>Sergipe</option>
-                                <option>Tocantins</option>
-                            </select>
-                        </fieldset>
-                        <fieldset id="for-fone"><legend>Telefone</legend>
-                            <p><label for="cfixo">Fixo :</label><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
-                            <p><label for="ccelular1">Celular 1 :</label><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
-                            <p><label for="ccelular2">Celular 2 :</label><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
-                        </fieldset>
+                            </li>
+        
+                        </ul>
                     </div>
-                    <p><label for="cemail">E-Mail :</label><input type="email=" name="temail" id="cemail"/></p>
-                </fieldset>
-            </form>
-        </section>
+                </nav>
+            </div>
+        </header>
+        <div class="container">     <!-- Inicio da div container -->
+            <div class="row">       <!-- Inicio da div row -->
+                <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
+                    <h1 class="text-center">Fornecedores</h1>
+                    <div class="row">       <!-- Inicio da div row Formulario -->
+                        <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
+                            <form class="form-control card-principal" id="for-cadastro">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <fieldset id="for-legenda">
+                                            <p>
+                                                <label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/>
+                                                <label for="cnome">Nome :</label><input type="text" name="tnome" id="cnome" placeholder="Nome"/>
+                                            </p>
+                                            <p>
+                                                <label for="cend">Endereço :</label> <input type="text" name="tend" id="cend" placeholder="Endereço"/>
+                                                <label for="cnum">Numero :</label> <input type="number" name="tnum" id="cnum" placeholder="000"/>
+                                                <label for="ccomp">Complemento :</label> <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
+                                            </p>
+                                            <p>
+                                                <label for="cbairro">Bairro :</label> <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
+                                                <label for="ccep">CEP :</label> <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
+                                                <label for="ccidade">Cidade :</label> <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
+                                            </p>
+                                            <div class="for-est-fone">
+                                                <fieldset id="cestado"><legend>Estado</legend>
+                                                    <select id=cbtipo>
+                                                        <option>Seleciona o Estado</option>
+                                                        <option>Acre</option>
+                                                        <option>Alagoas</option>
+                                                        <option>Amapá</option>
+                                                        <option>Amazonas</option>
+                                                        <option>Bahia</option>
+                                                        <option>Ceará</option>
+                                                        <option>Distrito Federal</option>
+                                                        <option>Espírito Santo</option>
+                                                        <option>Goiás</option>
+                                                        <option>Maranhão</option>
+                                                        <option>Mato Grosso</option>
+                                                        <option>Mato Grosso do Sul</option>
+                                                        <option>Minas Gerais</option>
+                                                        <option>Pará</option>
+                                                        <option>Paraíba</option>
+                                                        <option>Paraná</option>
+                                                        <option>Pernambuco</option>
+                                                        <option>Piauí</option>
+                                                        <option>Rio de Janeiro</option>
+                                                        <option>Rio Grande do Norte</option>
+                                                        <option>Rio Grande do Sul</option>
+                                                        <option>Rondônia</option>
+                                                        <option>Roraima</option>
+                                                        <option>Santa Catarina</option>
+                                                        <option>São Paulo</option>
+                                                        <option>Sergipe</option>
+                                                        <option>Tocantins</option>
+                                                    </select>
+                                                </fieldset>
+                                                <fieldset id="for-fone"><legend>Telefone</legend>
+                                                    <p><label for="cfixo">Fixo :</label><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
+                                                    <p><label for="ccelular1">Celular 1 :</label><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
+                                                    <p><label for="ccelular2">Celular 2 :</label><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
+                                                </fieldset>
+                                            </div>
+                                            <p><label for="cemail">E-Mail :</label><input type="email=" name="temail" id="cemail"/></p>
+                                        </fieldset>
+                                        <div class="menu-for">
+                                            <nav>
+                                                <div class="content nav-botao">
+                                                    <button          type="button" id="btnincluir"   href="#">Incluir</button>
+                                                    <button          type="button" id="btnalterar"   href="#">Alterar</button>
+                                                    <button          type="button" id="btnexcluir"   href="#">Excluir</button>
+                                                    <button          type="button" id="btnpesquisa"  href="#">Pesquisa</button>
+                                                    <button disabled type="button" id="btnconfirmar" href="#">Confirmar</button>
+                                                    <button disabled type="button" id="btncancelar"  href="#">Cancelar</button>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  <!-- Fim da div col 12 Formulario -->
+                    </div>>     <!-- Fim da div row Formulario -->
+                </div>  <!-- Fim da div col md 12 -->
+                <div class="modal" id="modal-excluir">   <!-- Caixa de Dialogue para excluir -->
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                    <div class="modal-title">Excluisão</div>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Deseja Realmente Excluir o Acompanhamento</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
+                                <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
+                            </div>
+                        </div>
+                     </div>
+                </div>                
+            </div>   <!-- Fim da div row -->
+        </div>      <!-- Fim da div container -->     
         <script src="js/script.js"></script>
     </body>
 </html>
