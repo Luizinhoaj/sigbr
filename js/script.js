@@ -40,30 +40,29 @@ function cadformulario() {
   var erro = $('.alert');
   var campo = $('#campo-erro');
 
-  $('.is-invalid').removeClass('is-invalid');
-  // removendo o elemento da tela sempe que tentar submeter o formulario
-  erro.addClass('d-none');
-
   if(descricao.val() == ''){
-    erro.removeClass('d-none');
-    campo.html('Descrição');
+    campo.html('&nbsp;Descrição&nbsp;');
       // Nome do campo que não foi preechido
-    descricao.focus();
-    descricao.addClass('is-invalid');
+      descricao.focus();
+      mudadispley();
     return false;
   }
 
   if(valor.val() == ''){
-    erro.removeClass('d-none');
-    campo.html('Valor');
+    campo.html(' Valor');
       // Nome do campo que não foi preechido
     valor.focus();
-    valor.addClass('is-invalid');
+    mudadispley();
     return false;
   }
 
   return true;
 }
+
+function mudadispley() {
+  document.getElementById("alert").style.display = "flex";
+}
+
 
 function habilitarbotao() {
 
@@ -108,5 +107,20 @@ function cancelaregistro() {
 
   cdescricao.html('');
   cvalor.html('');
+}
+
+function excluirregistro()
+{
+  var x;
+  var r=confirm("Confirma a Excluisão!");
+  if (r==true)
+  {
+    x="você pressionou OK!";
+  }
+  else
+  {
+    x="Você pressionou Cancelar!";
+  }
+  document.getElementById("card-body").innerHTML=x;
 }
 

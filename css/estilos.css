@@ -24,25 +24,32 @@ body{
     background: var(--cor-fundo);
 }
 
-/*  INICIO DO FOMULARIO CADASTRO */
+/*  INICIO DO FOMULARIO ACOMPANHAMENTO */
 
 .container{
-	display: inline-flex;
-	margin: 0 auto;
-	margin-top: 80px;
-	width: 980px;
-	border: 1px solid black;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .container-for{
-	border: 1px solid white
+	margin: 0 auto;
+	margin-top: 80px;
+	width: 800px;
+}
+
+.container label{
+	color: var(--cor-fonte);
+	font-size: 1em;
+	margin-left: 10px;
 }
 
 .container h1{
 	color: var(--cor-fonte);
 	margin: 10px;
 	font-size: 2.5em;
-	font-family: var(--fonte-geral);
 	text-align: center;
 }
 
@@ -54,49 +61,50 @@ body{
 .card-principal{
 	background: var(--cor-menu);
 	border-radius: 10px;
+	padding: 10px;
 }
 
 .card{
+	background: var(--cor-submenu);
 	box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
 	margin: 15px;
 }
 
-.form-group{
-	width: 100%;
-	height: 120px;
-	resize: none;
+.cad-for-imagem{   /* Formulario principal */
+	display: inline-flex;
 }
+
+.form-groupo{
+	color: var(--cor-fonte);
+	width: 550px;
+	margin: 0px 17px 10px 10px;
+}
+
+.cad-imagem {
+	width: 160px;
+	text-align: center;
+}
+
+.img-thumbnail{
+	width: 130px;
+	margin: 5px;
+}
+
 
 legend{
 	font-size: 1em;
 	padding: 5px;
 }
 
-form, .alert {
-	margin-bottom: 0;
-}
-
-.cad-for-imagem{
-	margin-top: 10px;
-}
-
 .acom-textarea{
-	width: 100%;
+	width: 98%;
+	margin: 5px;
 	height: 170px;
-}
-
-.cad-imagem {
-	text-align: center;
-}
-
-.img-thumbnail{
-	width: 150px;
-	margin-bottom: 5px;
 }
 
 #ccodigo{
 	margin-bottom: 10px;
-
+	margin-top: 10px;
 }
 
 #cvalor, #ccodigo{
@@ -115,16 +123,18 @@ form, .alert {
 	width: 400px;
 }
 
-.menu-for{
-	text-align: center;
-	margin-bottom: 10px;
-}
-
 
 /* MENU FORMULARIO */
 
-#btnincluir, #btnalterar, #btnexcluir, #btnconfirmar, #btncancelar{
+.menu-for .nav-botao{
+	display: inline-flex;
+	text-align: center;
+}
+
+#btnincluir, #btnalterar, #btnexcluir, 
+#btnconfirmar, #btncancelar, #btnbusca{
 	background-color: var(--cor-menu);
+	cursor: pointer;
 }
 
 .menu-for{
@@ -136,29 +146,55 @@ form, .alert {
 	position: relative;
 	display: flex;
 	margin: 0 auto;
-	height: 70px;
+	height: 60px;
 	align-items: center;
 }
 
-#btnincluir, #btnalterar, #btnexcluir,
+#btnincluir, #btnalterar, #btnexcluir, 
 #btnconfirmar, #btncancelar{
 	color: var(--cor-fonte);
 	font-size: 100%;
 	font-weight: 500;
-	padding: 9px 17px;
+	padding: 5px 10px;
 	border-radius: 5px;
 	transition: all 0.3s ease;
 	text-decoration: none;
-	padding: 10px;
 	background-color: var(--cor-menu);
-	margin: 5px 5px 5px 0px;
+	margin-left: 5px;
+}
+
+
+#btnbusca{
+	color: var(--cor-fonte);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	background-color: var(--cor-menu);
+	margin: 0 0 5px 5px;
 }
 
 #btnincluir:hover, #btnalterar:hover, #btnexcluir:hover, 
-#btnconfirmar:hover, #btncancelar:hover{
+#btnconfirmar:hover, #btncancelar:hover, #btnbusca:hover{
   background: var(--cor-hover);
 }
 
+
+/* INICIO MENSAGEM DE ALERTA */
+
+#alert{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	color: var(--cor-fonte);
+	width: 350px;
+	height: 40px;
+	margin: auto;
+	background-color: var(--cor-menu);
+}
 
 /* INICIO DO RESPONSIVEL */
 
@@ -184,6 +220,18 @@ form, .alert {
 	
 	.menu .search-box input{
 	  padding: 0 100px 0 15px;
+	}
+	
+}
+
+
+@media screen and (max-width: 825px){
+	.container-for{
+		width: 700px;
+	}
+
+	.form-groupo{
+		width: 450px;
 	}
 	
 }
@@ -274,12 +322,42 @@ form, .alert {
 	
 @media screen and (max-width: 768px){	
 	  
+	.container-for{
+		margin-left: 80px;
+	}
+
+	.container h1{
+		width: 580px;
+		font-size: 2em;
+	}
+	
+	.card-principal{
+		width: 600px;
+	}
+	
 	.cad-for-imagem{
-		display: block;
+		width: 550px;
+		display: inline-block;
+		align-items: center;
+	}
+
+	.acom-textarea{
+		width: 510px;
 	}
 	
 	.cad-imagem{
 		width: 250px;
+		margin-left: 25%;
+		margin-bottom: 10px;
+	}
+
+	#img-fomulario{
+		width: 200px;
+		margin-left: 20px;
+	}
+
+	.img-thumbnail{
+		width: 200px;
 	}
 
 	.card{
@@ -290,70 +368,37 @@ form, .alert {
 		width: 250px;
 		font-size: 0.9em;
 	}
-
-	.clas-logo{
-		position: absolute;
-		top: 20%;
-		left: 20%;
-		z-index: 10;
-		text-align: right;
-	}
-	   
+   
 }
 	
-@media screen and (max-width: 600px){
-	
-	#btnincluir, #btnalterar, #btnexcluir, 
-	#btnconfirmar, #btncancelar{
-		font-size: 60%;
-		padding: 2px;
+@media screen and (max-width: 675px){
+	.container-for{
+		margin-left: 130px;
 	}
 
-	.container h1{
-		font-size: 1.5em;
-	}
-	
-	.image-logo{
-		width: 300px;
-	}
-	
-	.image-zap{
-		margin-left: 20vw;
+}
+
+
+@media screen and (max-width: 675px){
+	.container-for{
+		margin-left: 180px;
 	}
 
-	.nav-botao{
-		height: 40px;
-		align-items: center;
-	}
-	
-	.menu nav{
-		padding: 0 10px;
-	}
-	
-	.content .logo a{
-		font-size: 2em;
-	}
-	
-	.menu .search-box{
-		max-width: calc(100% - 70px);
-	}
-	
-	.menu .search-box .go-icon{
-		width: 30px;
-		right: 0;
-	}
-	
-	.menu .search-box input{
-		padding-right: 30px;
-	}
+}
 
-	.image-logo{
-		margin-top: 50px;
-	} 
+@media screen and (max-width: 565px){
+	.container-for{
+		margin-left: 220px;
+	}
 
 }
 
 @media screen and (max-width: 500px){
+
+	.container-for{
+		margin-left: 280px;
+	}
+
 
 	.legenda{
 		font-size: 0.6em;
@@ -383,4 +428,11 @@ form, .alert {
 	.card label, .img-fomulario{
 		font-size: 0.8em;
 	}
+}
+
+@media screen and (max-width: 460px){
+	.container-for{
+		margin-left: 320px;
+	}
+
 }
