@@ -115,16 +115,82 @@ legend{
 	margin-left: 5px;
 	padding: 2px;
 	height: 40px;
-	width: 100px;
+	width: 80px;
 	text-align: right;
 }
 
-#cdescricao{
+#cdescricao, #cnome, #cendereco{
 	margin-left: 5px;
 	padding: 2px;
 	height: 40px;
 	margin-bottom: 10px;
 	width: 400px;
+}
+
+#cnum, #ccomp{
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 55px;
+	text-align: right;
+}
+
+#cbairro, #ccidade{
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+#ccep{
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 100px;
+}
+
+.estado-fone{
+	display: flex;
+	width: auto;
+}
+
+.for-est{
+	margin-top: 10px;
+	padding: 2px;
+	height: 40px;
+	width: 120px;
+}
+
+.for-fone{
+	margin-left: 60px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 545px;
+	height: auto;
+}
+
+#fone{
+	display: flex;
+}
+
+#cfixo, #ccelular1, #ccelular2{
+	margin-left: 25px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 135px;
+}
+
+#cemail{
+	text-transform: lowercase;
+	margin-left: 5px;
+	padding: 2px;
+	height: 40px;
+	width: 500px;
 }
 
 
@@ -136,7 +202,7 @@ legend{
 }
 
 #btnincluir, #btnalterar, #btnexcluir, 
-#btnconfirmar, #btncancelar, #btnbusca{
+#btnconfirmar, #btncancelar, #btnpesquisa, #btnbusca{
 	background-color: var(--cor-menu);
 	cursor: pointer;
 }
@@ -155,7 +221,7 @@ legend{
 }
 
 #btnincluir, #btnalterar, #btnexcluir, 
-#btnconfirmar, #btncancelar{
+#btnconfirmar, #btncancelar, #btnpesquisa{
 	color: var(--cor-fonte);
 	font-size: 100%;
 	font-weight: 500;
@@ -340,7 +406,7 @@ legend{
 	}
 	
 	.card-principal{
-		width: 600px;
+		width: auto;
 	}
 	
 	.cad-for-imagem{

@@ -5,14 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/css/bootstrap-icons.css">
-
-        <link rel="stylesheet" href="css/principal.css">
+        <link rel="stylesheet" href="css/menu.css">
         <link rel="stylesheet" href="css/estilos.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
         <title>SIGBR - Acompanhamento</title>
+
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
@@ -92,18 +90,18 @@
                                     </li>
                                 </ul>
                             </li>
-
+                            
                             <li class="blog-drop-down">
                                 <a href="#">Contatos</a>
-                                <div class="Blog">
+                                <div class="blog">
                                     <div class="blog-des">
                                         <h4 class="blog-title">Ribeiro & Santos</h4>
-                                        <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
-                                        <p>(37) 99951-3044</p>
+                                        <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp">
+                                        <h4>(37) 99951-3044</h4>
                                     </div>
                                 </div>
                             </li>
-
+        
                         </ul>
                     </div>
                 </nav>
@@ -112,72 +110,53 @@
         <div class="container">     <!-- Inicio da div container -->
             <div class="row">       <!-- Inicio da div row -->
                 <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
-                    <h1 class="text-center">Adicionais</h1>
+                    <h1 class="text-center">Adicional</h1>
                     <div class="row">       <!-- Inicio da div row Formulario -->
                         <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
                             <form class="form-control card-principal" id="for-cadastro">
                                 <div class="card">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000" disabled/>
-                                            <p><label class="lb-descricao" for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Adiconal" disabled/></p> 
-                                            <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00" disabled/></p>
-                                            <div class="row cad-for-imagem">
-                                                <div class="col-9 cad-formulario">
-                                                    <div class="form-groupo">
-                                                        <fieldset><legend class="legenda">Adicionais Cadastrados</legend>
-                                                            <textarea class="form-group acom-textarea" name="grupos-cad" id="grupos-cad" disabled></textarea>
-                                                        </fieldset>
-                                                    </div>
+                                    <div class="card-body">
+                                        <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000" disabled/>
+                                        <p><label class="lb-descricao" for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Adicional" disabled/></p> 
+                                        <p><label for="cvalor">Valor :</label><input type="number" name="tvalor" id="cvalor" placeholder="0.00" disabled/></p>
+                                        <div class="row cad-for-imagem">
+                                            <div class="col-9 cad-formulario">
+                                                <div class="form-groupo">
+                                                    <fieldset><legend class="legenda">Adicionais Cadastrados</legend>
+                                                        <textarea class="form-group acom-textarea" name="grupos-cad" id="grupos-cad" disabled></textarea>
+                                                    </fieldset>
                                                 </div>
+                                            </div>
                                             
-                                                <div class="col-3 cad-imagem">
-                                                    <div>
-                                                        <fieldset id="img-fomulario"><legend>Imagem</legend>
-                                                            <img src="imagens/sem-imagem.jpg" class="img-thumbnail" alt="Imagem não Existe">
-                                                            <button id="btn-busca" type="button" class="btn btn-primary btn-titulo" disabled>Buscar</button>
-                                                        </fieldset>
-                                                    </div>
+                                            <div class="col-3 cad-imagem">
+                                                <div>
+                                                    <fieldset id="img-fomulario"><legend>Imagem</legend>
+                                                        <img src="imagens/sem-imagem.jpg" class="img-thumbnail" alt="Imagem não Existe">
+                                                        <button disabled type="button" id="btnbusca" href="#">Buscar</button>
+                                                    </fieldset>
                                                 </div>
                                             </div>
-                                            <div class="alert alert-danger d-none">
-                                                Preecha o campo <span id="campo-erro"></span>!
-                                            </div>
+                                        </div>
+                                        <div id="alert">
+                                            Preecha o campo <span id="campo-erro"></span>!
                                         </div>
                                     </div>
                                     <div class="menu-for">
                                         <nav>
                                             <div class="content nav-botao">
-                                                <button type="button" id="btnincluir" onclick="incluirregistro()" href="#">Incluir</button>
-                                                <button type="button" id="btnalterar" onclick="incluirregistro()" href="#">Alterar</button>
-                                                <button type="button" id="btnexcluir" href="#">Excluir</button>
-                                                <button disabled type="button" id="btnconfirmar" href="#" disabled>Confirmar</button>
-                                                <button disabled type="button" id="btncancelar" onclick="cancelaregistro()" href="#">Cancelar</button>
+                                                <button type="button" id="btnincluir"   onclick="incluirregistro()" href="#">Incluir</button>
+                                                <button type="button" id="btnalterar"   onclick="incluirregistro()" href="#">Alterar</button>
+                                                <button type="button" id="btnexcluir"   onclick="excluirregistro()" href="#">Excluir</button>
+                                                <button type="button" id="btnconfirmar" onclick="cadformulario()"   href="#">Confirmar</button>
+                                                <button type="button" id="btncancelar"  onclick="cancelaregistro()" href="#">Cancelar</button>
                                             </div>
                                         </nav>
                                     </div>
                                 </div>  
                             </form>
                         </div>  <!-- Fim da div col 12 Formulario -->
-                    </div>>     <!-- Fim da div row Formulario -->
+                    </div>     <!-- Fim da div row Formulario -->
                 </div>  <!-- Fim da div col md 12 -->
-                <div class="modal" id="modal-excluir">   <!-- Caixa de Dialogue para excluir -->
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <div class="modal-title">Excluisão</div>
-                                <button class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Deseja Realmente Excluir o Acompanhamento</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
-                                <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>                
             </div>   <!-- Fim da div row -->
         </div>      <!-- Fim da div container -->     
         <script src="js/js/jquery-3.4.1.slim.min.js"></script>

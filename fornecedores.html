@@ -116,23 +116,23 @@
                             <form class="form-control card-principal" id="for-cadastro">
                                 <div class="card">
                                     <div class="card-body">
-                                        <fieldset id="for-legenda">
-                                            <p>
-                                                <label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/>
-                                                <label for="cnome">Nome :</label><input type="text" name="tnome" id="cnome" placeholder="Nome"/>
-                                            </p>
-                                            <p>
-                                                <label for="cend">Endereço :</label> <input type="text" name="tend" id="cend" placeholder="Endereço"/>
-                                                <label for="cnum">Numero :</label> <input type="number" name="tnum" id="cnum" placeholder="000"/>
-                                                <label for="ccomp">Complemento :</label> <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
-                                            </p>
-                                            <p>
-                                                <label for="cbairro">Bairro :</label> <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
-                                                <label for="ccep">CEP :</label> <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
-                                                <label for="ccidade">Cidade :</label> <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
-                                            </p>
-                                            <div class="for-est-fone">
-                                                <fieldset id="cestado"><legend>Estado</legend>
+                                        <p>
+                                            <label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/>
+                                            <label for="cnome">Nome :</label><input type="text" name="tnome" id="cnome" placeholder="Nome"/>
+                                        </p>
+                                        <p>
+                                            <label for="cend">Endereço :</label> <input type="text" name="tend" id="cendereco" placeholder="Endereço"/>
+                                            <label for="cnum">Nº :</label> <input type="text" name="tnum" id="cnum" onkeypress='return filtroTeclas(event)' placeholder="000"/>
+                                            <label for="ccomp">Comp.:</label> <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
+                                        </p>
+                                        <p>
+                                            <label for="cbairro">Bairro :</label> <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
+                                            <label for="ccep">CEP :</label> <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
+                                            <label for="ccidade">Cidade :</label> <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
+                                        </p>
+                                        <div class="estado-fone form-groupo">
+                                            <div class="for-est">
+                                                <fieldset class="legend" id="cestado"><legend>Estado</legend>
                                                     <select id=cbtipo>
                                                         <option>Seleciona o Estado</option>
                                                         <option>Acre</option>
@@ -164,14 +164,16 @@
                                                         <option>Tocantins</option>
                                                     </select>
                                                 </fieldset>
-                                                <fieldset id="for-fone"><legend>Telefone</legend>
-                                                    <p><label for="cfixo">Fixo :</label><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
-                                                    <p><label for="ccelular1">Celular 1 :</label><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
-                                                    <p><label for="ccelular2">Celular 2 :</label><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
+                                            </div>
+                                            <div class="for-fone">
+                                                <fieldset class="legend" id="fone"><legend>Telefones</legend>
+                                                    <p><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
+                                                    <p><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
+                                                    <p><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
                                                 </fieldset>
                                             </div>
-                                            <p><label for="cemail">E-Mail :</label><input type="email=" name="temail" id="cemail"/></p>
-                                        </fieldset>
+                                        </div>
+                                        <p><label for="cemail">E-Mail :</label><input type="email=" name="temail" id="cemail"/></p>
                                         <div class="menu-for">
                                             <nav>
                                                 <div class="content nav-botao">
@@ -188,25 +190,8 @@
                                 </div>
                             </form>
                         </div>  <!-- Fim da div col 12 Formulario -->
-                    </div>>     <!-- Fim da div row Formulario -->
+                    </div>     <!-- Fim da div row Formulario -->
                 </div>  <!-- Fim da div col md 12 -->
-                <div class="modal" id="modal-excluir">   <!-- Caixa de Dialogue para excluir -->
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                    <div class="modal-title">Excluisão</div>
-                                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Deseja Realmente Excluir o Acompanhamento</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="bi bi-x-square-fill"></i> Cancelar</button>
-                                <button class="btn btn-primary"><i class="bi bi-trash-fill"></i> Excluir</button>
-                            </div>
-                        </div>
-                     </div>
-                </div>                
             </div>   <!-- Fim da div row -->
         </div>      <!-- Fim da div container -->     
         <script src="js/script.js"></script>
