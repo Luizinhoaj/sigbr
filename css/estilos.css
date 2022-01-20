@@ -80,6 +80,10 @@ body{
 	margin: 0px 17px 10px 10px;
 }
 
+#img-fomulario{
+	color: var(--cor-fonte);
+}
+
 .cad-imagem {
 	width: 160px;
 	text-align: center;
@@ -238,9 +242,13 @@ legend{
 
 @media screen and (max-width: 800px){
 
-	  .menu .menu-icon{
-		  display: block;
-		}
+	.container-for{
+		margin-bottom: 15px;
+	}
+
+	.menu .menu-icon{
+		display: block;
+	}
 	
 	  .menu #show-menu:checked ~ .menu-icon i::before{
 		  content: "\f00d";
@@ -388,7 +396,7 @@ legend{
 
 @media screen and (max-width: 565px){
 	.container-for{
-		margin-left: 220px;
+		margin-left: 250px;
 	}
 
 }
