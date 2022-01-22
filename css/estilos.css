@@ -400,6 +400,10 @@ legend{
 		margin-left: 80px;
 	}
 
+	.menu .menu-icon{
+		font-size: 1rem;
+	}
+
 	.container h1{
 		width: 580px;
 		font-size: 2em;
