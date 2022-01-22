@@ -315,7 +315,7 @@ legend{
 
 	.menu .menu-icon{
 		display: block;
-		margin-top: 5px;
+		margin-top: 10px;
 	}
 	
 	  .menu #show-menu:checked ~ .menu-icon i::before{
