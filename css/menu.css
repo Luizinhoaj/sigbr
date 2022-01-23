@@ -188,7 +188,68 @@ nav .content .links{
 	height: auto;
 }
 
-/* Responsive code start */
+
+/* MENU FORMULARIO */
+
+.menu-for .nav-botao{
+	display: inline-flex;
+	text-align: center;
+}
+
+#btnincluir, #btnalterar, #btnexcluir, 
+#btnconfirmar, #btncancelar, #btnpesquisa, #btnbusca{
+	background-color: var(--cor-menu);
+	cursor: pointer;
+}
+
+.menu-for{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.nav-botao{
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	height: 60px;
+	align-items: center;
+}
+
+#btnincluir, #btnalterar, #btnexcluir, 
+#btnconfirmar, #btncancelar, #btnpesquisa{
+	color: var(--cor-fonte);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	background-color: var(--cor-menu);
+	margin-left: 5px;
+}
+
+
+#btnbusca{
+	color: var(--cor-fonte);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	background-color: var(--cor-menu);
+	margin: 0 0 5px 5px;
+}
+
+#btnincluir:hover, #btnalterar:hover, #btnexcluir:hover, #btnpesquisa:hover,
+#btnconfirmar:hover, #btncancelar:hover, #btnbusca:hover{
+  background: var(--cor-hover);
+}
+
+
+/* INICIO DO MENU RESPONSIVEL */
+
+
 @media screen and (max-width: 1250px){
   .menu nav{
     max-width: 100%;
@@ -197,6 +258,7 @@ nav .content .links{
   nav .content .links{
     margin-left: 30px;
   }
+
   .content .links li a{
     padding: 8px 13px;
   }
@@ -204,6 +266,7 @@ nav .content .links{
   .menu .search-box input{
     padding: 0 100px 0 15px;
   }
+
 }
 
 
@@ -251,8 +314,7 @@ nav .content .links{
 	.content .links li a.desktop-link{
     	display: none;
   	}
-
-  /* dropdown responsive code start */
+	  
   	.content .links ul,
   	.content .links ul ul{
     	position: static;
@@ -280,61 +342,22 @@ nav .content .links{
   	}
 }
 
-@media screen and (max-width: 700px){	
-	
-	.clas-logo{
-		position: absolute;
-		top: 20%;
-		left: 20%;
-		z-index: 10;
-		text-align: right;
+@media screen and (max-width: 500px){
+
+	.logo{
+		margin-left: 25vw;
 	}
-	
-	.image-logo{
-		margin-top: 0px;
-		width: 80%;
-		margin-left: 0px;
-	}
-	
 }
 
-
 @media screen and (max-width: 400px){
-
-	nav .content .links{
-    	display: block;
-    	position: fixed;
-    	background: var(--cor-submenu);
-    	height: 100%;
-    	width: 80%;
-    	top: 70px;
-    	left: -100%;
-    	margin-left: 0;
-    	max-width: 350px;
-    	overflow-y: auto;
-    	padding-bottom: 100px;
-    	transition: all 0.3s ease;
-		font-size: 14px;
-  	}
-
-	.menu nav{
-    	padding: 0 10px;
-  	}
-
-	.content .logo a{
-    	font-size: 2em;
-  	}
-
-  	.menu .search-box{
-    	max-width: calc(100% - 70px);
- 	 }
-
-	.menu .search-box .go-icon{
-    	width: 30px;
-    	right: 0;
+	
+	#btnincluir, #btnalterar, #btnexcluir, #btnpesquisa, 
+	#btnconfirmar, #btncancelar, #btnbusca{
+		font-size: 80%;
+		font-weight: 500;
+		padding: 5px 5px;
+		border-radius: 5px;
+		margin-left: 2px;
 	}
-
-  	.menu .search-box input{
-    	padding-right: 30px;
-  	}	
+			
 }

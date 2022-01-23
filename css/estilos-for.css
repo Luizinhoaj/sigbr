@@ -194,6 +194,9 @@ legend{
 	width: 500px;
 }
 
+
+
+
 /* INICIO MENSAGEM DE ALERTA */
 
 #alert{
@@ -209,6 +212,32 @@ legend{
 }
 
 /* INICIO DO RESPONSIVEL */
+
+
+@media screen and (max-width: 950px){
+
+	.menu nav{
+	  max-width: 100%;
+	  padding: 0px 20px;
+	}
+
+	nav .content .links{
+	  margin-left: 30px;
+	}
+
+	.content .links li a{
+	  padding: 8px 13px;
+	}
+
+	.menu .search-box{
+	  max-width: calc(100% - 100px);
+	}
+	
+	.menu .search-box input{
+	  padding: 0 100px 0 15px;
+	}
+	
+}
 
 
 @media screen and (max-width: 825px){
@@ -227,6 +256,87 @@ legend{
 	.container-for{
 		margin-bottom: 15px;
 	}
+
+	.menu .menu-icon{
+		display: block;
+	}
+	
+	  .menu #show-menu:checked ~ .menu-icon i::before{
+		  content: "\f00d";
+		}
+	
+		.menu nav{
+			position: relative;
+			display: inline-flex;
+	  	}
+	  	
+		.logo{
+			margin-left: 35vw;
+		}
+
+		nav #show-menu:checked ~ .content .links{
+			left: 0%;
+		}
+
+		nav .content .links{
+			display: block;
+			position: fixed;
+			background: var(--cor-submenu);
+			height: 100%;
+			width: 100%;
+			top: 70px;
+			left: -100%;
+			margin-left: 0;
+			max-width: 350px;
+			overflow-y: auto;
+			padding-bottom: 100px;
+			transition: all 0.3s ease;
+		}
+	
+
+	  .content .links li{
+		  margin: 15px 20px;
+		}
+	
+		.content .links li a,
+		.content .links li label{
+		  line-height: 40px;
+		  font-size: 20px;
+		  display: block;
+		  padding: 8px 18px;
+		  cursor: pointer;
+		}
+	
+	  .content .links li a.desktop-link{
+		  display: none;
+		}
+	
+	/* dropdown responsive code start */
+		.content .links ul,
+		.content .links ul ul{
+		  position: static;
+		  opacity: 1;
+		  visibility: visible;
+		  background: none;
+		  max-height: 0px;
+		  overflow: hidden;
+		}
+	
+		.content .links #show-features:checked ~ ul,
+		.content .links #show-services:checked ~ ul,
+		.content .links #show-items:checked ~ ul{
+		  max-height: 100vh;
+		}
+	
+	  .content .links ul li{
+		  margin: 7px 20px;
+		}
+	
+		.content .links ul li a{
+		  font-size: 18px;
+		  line-height: 30px;
+		  border-radius: 5px!important;
+		}
 }
 	
 @media screen and (max-width: 768px){	
@@ -318,6 +428,10 @@ legend{
 		font-size: 0.7em;
 	}
 
+	.clas-logo{
+		align-items: center;
+	}
+
 	.logo{
 		margin-left: 25vw;
 	}
@@ -372,6 +486,15 @@ legend{
 
 	.cad-imagem{
 		margin-left: 30px;
+	}
+
+	#btnincluir, #btnalterar, #btnexcluir, 
+	#btnconfirmar, #btncancelar{
+		font-size: 80%;
+		font-weight: 500;
+		padding: 5px 5px;
+		border-radius: 5px;
+		margin-left: 2px;
 	}
 			
 }
