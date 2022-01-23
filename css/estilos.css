@@ -350,6 +350,10 @@ legend{
 		width: 280px;
 	}
 
+	.cad-forne{
+		display: block;
+	}
+
 	.card-principal{
 		width: 350px;
 	}
