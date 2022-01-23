@@ -102,8 +102,6 @@ nav .content .links{
 	display: none;
 }
 
-/* inicio do Menu Dropdown */
-
 .content .links ul{
   	position: absolute;
   	background: var(--cor-submenu);
@@ -269,8 +267,8 @@ nav .content .links{
 
 }
 
-
 @media screen and (max-width: 800px){
+
 	.menu .menu-icon{
     	display: block;
   	}
