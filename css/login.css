@@ -184,6 +184,7 @@ form, .alert {
 }
 
 @media only screen and (max-width: 810px){
+
     #cusuario, #csenha{
         margin-bottom: 5px;
         width: 150px;
@@ -201,6 +202,15 @@ form, .alert {
 
 @media only screen and (max-width: 680px){
     
+    .first-content{
+        margin-top: -80px;
+        height: auto;
+    }
+
+    form{
+        margin-bottom: 30px;
+    }
+
     .imagem-respo{
 
     }
