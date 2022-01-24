@@ -406,7 +406,7 @@ legend{
 	}
 
 	.clas-logo{
-		align-items: center;
+		height: auto;
 	}
 
 	.logo{
@@ -414,7 +414,8 @@ legend{
 	}
 
 	.image-logo{
-		width: 80%;
+		width: 100%;
+		margin-left: -55px;
 	}
 
 	#cvalor, #ccodigo{
