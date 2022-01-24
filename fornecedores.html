@@ -125,27 +125,33 @@
                                             <label for="cnome">Nome :</label>
                                             <input type="text" name="tnome" id="cnome" placeholder="Nome"/>
                                         </div>
-                                        <div>
-                                            <label for="cend">Endereço :</label> 
+                                        <div class="endereco">
+                                            <label class="label-end" for="cend">Endereço :</label> 
                                             <input type="text" name="tend" id="cendereco" placeholder="Endereço"/>
                                             
-                                            <label for="cnum">Nº :</label>
-                                            <input type="text" name="tnum" id="cnum" onkeypress='return filtroTeclas(event)' placeholder="000"/>
+                                            <div>
+                                                <label for="cnum">Nº :</label>
+                                                <input type="text" name="tnum" id="cnum" onkeypress='return filtroTeclas(event)' placeholder="000"/>
                                             
-                                            <label for="ccomp">Comp.:</label>
-                                            <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
+                                                <label for="ccomp">Comp.:</label>
+                                                <input type="text" name="tcomp" id="ccomp" placeholder="Complemento"/>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <label for="cbairro">Bairro :</label> 
-                                            <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
-
-                                            <label for="ccep">CEP :</label> 
-                                            <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
-
-                                            <label for="ccidade">Cidade :</label> 
-                                            <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
+                                        <div class="bai-cep-cid">
+                                            <div>
+                                                <label for="cbairro">Bairro :</label> 
+                                                <input type="text" name="tbairro" id="cbairro" placeholder="Bairro"/>
+                                            </div>
+                                            <div>
+                                                <label for="ccep">CEP :</label> 
+                                                <input type="text" name="tcep" id="ccep" placeholder="00000-000"/>
+                                            </div>
+                                            <div>
+                                                <label for="ccidade">Cidade :</label> 
+                                                <input type="text" name="tcidade" id="ccidade" placeholder="Cidade"/>
+                                            </div>
                                         </div>
-                                        <div class="estado-fone form-groupo">
+                                        <div class="form-groupo">
                                             <div class="for-est">
                                                 <fieldset class="legend" id="cestado"><legend>Estado</legend>
                                                     <select id=cbtipo>
@@ -182,9 +188,17 @@
                                             </div>
                                             <div class="for-fone">
                                                 <fieldset class="legend" id="fone"><legend>Telefones</legend>
-                                                    <p><input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/></p>
-                                                    <p><input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/></p>
-                                                    <p><input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/></p>
+                                                    <div class="telefones">
+                                                        <div>
+                                                            <input type="tel" name="tfixo" id="cfixo" placeholder="(99) 9999-9999"/>
+                                                        </div>
+                                                        <div>
+                                                            <input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/>
+                                                        </div>
+                                                        <div>
+                                                            <input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/>
+                                                        </div>
+                                                    </div>
                                                 </fieldset>
                                             </div>
                                         </div>

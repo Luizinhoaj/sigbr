@@ -76,10 +76,16 @@ body{
 }
 
 .form-groupo{
+	display: flex;
 	color: var(--cor-fonte);
 	width: 550px;
 	margin: 0px 17px 10px 10px;
 }
+
+.telefones{
+	display: flex;
+}
+
 
 #img-fomulario{
 	color: var(--cor-fonte);
@@ -120,6 +126,14 @@ legend{
 	text-align: right;
 }
 
+.endereco{
+	display: flex;
+}
+
+.label-end{
+	margin-top: 10px;
+}
+
 #cdescricao, #cnome, #cendereco{
 	margin-left: 5px;
 	padding: 2px;
@@ -135,6 +149,10 @@ legend{
 	margin-bottom: 10px;
 	width: 55px;
 	text-align: right;
+}
+
+.bai-cep-cid{
+	display: flex;
 }
 
 #cbairro, #ccidade{
@@ -391,45 +409,6 @@ legend{
 
 @media screen and (max-width: 500px){
 
-	.container-for{
-		margin-left: 280px;
-	}
-
-
-	.legenda{
-		font-size: 0.6em;
-	}
-
-	#cdescricao{
-		width: 200px;
-		font-size: 0.7em;
-	}
-
-	.clas-logo{
-		height: auto;
-	}
-
-	.logo{
-		margin-left: 25vw;
-	}
-
-	.image-logo{
-		width: 100%;
-		margin-left: -55px;
-		margin-top: 30px;
-	}
-
-	#cvalor, #ccodigo{
-		font-size: 0.7em;
-	}
-	
-	.card label, .img-fomulario{
-		font-size: 0.8em;
-	}
-}
-
-@media screen and (max-width: 400px){
-
 	.container h1{
 		width: 330px;
 		font-size: 1.5em;
@@ -467,13 +446,74 @@ legend{
 		margin-left: 30px;
 	}
 
+	.endereco{
+		display: block;
+	}
+	
+	.bai-cep-cid{
+		display: block;
+	}
+	
+	.form-groupo{
+		display: block;
+	}
+
+	.for-est{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	
+	.for-fone{
+		margin-left: 0px;
+		margin-bottom: 0px;
+		width: 280px;
+	}
+	
+	.telefones{
+		display: block;
+	}
+
+	.clas-logo{
+		height: auto;
+	}
+
+	.logo{
+		margin-left: 25vw;
+	}
+
+	.image-logo{
+		width: 100%;
+		margin-left: -55px;
+		margin-top: 30px;
+	}
+
+	#cvalor, #ccodigo{
+		font-size: 0.7em;
+	}
+
+	#cdescricao, #cnome,#cendereco{
+		width: 200px;
+		font-size: 0.7em;
+	}
+
+	#ccidade{
+		margin-bottom: 0px;
+	}
+	.card label, .img-fomulario{
+		font-size: 0.8em;
+	}
+
+	#cemail{
+		width: 280px;
+	}
+
 	#btnincluir, #btnalterar, #btnexcluir, 
 	#btnconfirmar, #btncancelar{
-		font-size: 80%;
+		font-size: 70%;
 		font-weight: 500;
 		padding: 5px 5px;
 		border-radius: 5px;
-		margin-left: 2px;
+		margin-left: 1px;
 	}
-			
+
 }
