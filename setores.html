@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/estilos.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
-        <title>SIGBR - Principal</title>
+        <title>SIGBR - Garçom</title>
 
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
@@ -101,17 +101,53 @@
                                     </div>
                                 </div>
                             </li>
-        
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-        <section class="clas-logo">
-            <div>
-                <img class="image-logo" src="imagens/logo.png" alt="Garçon">
-            </div>
-        </section>
+        <div class="container">     <!-- Inicio da div container -->
+            <div class="row">       <!-- Inicio da div row -->
+                <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
+                    <h1 class="text-center">Setores</h1>
+                    <div class="row">       <!-- Inicio da div row Formulario -->
+                        <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
+                            <form class="form-control card-principal" id="for-cadastro">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
+                                        <p><label for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Setor"/></p>
+                                        <div class="row cad-for-imagem">
+                                            <div class="col-12 cad-formulario">
+                                                <div class="form-groupo">
+                                                    <fieldset><legend class="legenda">Setores Cadastradas</legend>
+                                                        <textarea class="form-group acom-textarea" name="grupos-cad" id="grupos-cad" disabled></textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>                                            
+                                        </div>
+                                        <div id="alert">
+                                            Preecha o campo <span id="campo-erro"></span>!
+                                        </div>
+                                    </div>
+                                    <div class="menu-for">
+                                        <nav>
+                                            <div class="content nav-botao">
+                                                <button type="button" id="btnincluir"   onclick="incluirregistro()" href="#">Incluir</button>
+                                                <button type="button" id="btnalterar"   onclick="incluirregistro()" href="#">Alterar</button>
+                                                <button type="button" id="btnexcluir"   onclick="excluirregistro()" href="#">Excluir</button>
+                                                <button type="button" id="btnconfirmar" onclick="cadformulario()"   href="#">Confirmar</button>
+                                                <button type="button" id="btncancelar"  onclick="cancelaregistro()" href="#">Cancelar</button>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                </div>  
+                            </form>
+                        </div>  <!-- Fim da div col 12 Formulario -->
+                    </div>     <!-- Fim da div row Formulario -->
+                </div>  <!-- Fim da div col md 12 -->
+            </div>   <!-- Fim da div row -->
+        </div>      <!-- Fim da div container -->
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -34,6 +34,11 @@ function carregaprodutos() {
   window.location = "produtos.html";
 }
 
+function carregasetores() {
+  window.location = "produtos.html";
+}
+
+
 function cadformulario() {
   var descricao = $('#cdescricao');
   var valor = $('#cvalor');
