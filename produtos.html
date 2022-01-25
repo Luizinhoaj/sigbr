@@ -132,7 +132,7 @@
                                                             <option>Seleciona o Fornecedor</option>
                                                         </select>
                                                     </div>
-                                                    <div class="formatar-label">
+                                                    <div>
                                                         <label for="ccod-setor">Setor :</label>
                                                         <select id="ccod-setor" disabled>
                                                             <option>Seleciona o Setor</option>
@@ -156,44 +156,53 @@
                                             </div>
                                             <p><label class="lb-descricao" for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Produto" disabled/></p> 
                                             <div class="contener-compras">
-                                                <div class="dados-compra">
-                                                    <fieldset id="ccompra"><legend>Dados da Compra</legend>
-                                                        <p>
-                                                            <label for="cdata-compra">Data da Compra :</label> <input type="date" name="tcdata-compra" id="cdata-compra"/>
-                                                            <label for="cvalor-custo">Valor do Custo :</label> <input type="number" name="tvalor-custo" id="cvalor-custo" placeholder="000"/>
-                                                        </p>
-                                                    </fieldset>
-                                                </div>
+                                                <fieldset id="ccompra"><legend>Dados da Compra</legend>
+                                                    <div class="dados-compra">
+                                                        <div class="data-compra">
+                                                            <label for="cdata-compra">Data da Compra :</label> 
+                                                            <input type="date" name="tcdata-compra" id="cdata-compra"/>
+                                                        </div>
+                                                        <div>
+                                                            <label for="cvalor-custo">Valor do Custo :</label> 
+                                                            <input type="number" name="tvalor-custo" id="cvalor-custo" placeholder="000"/>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
                                                 <div class="prod-est">
-                                                    <fieldset id="cestoque">
-                                                        <legend>Produto em Estoque</legend>
-                                                        <label>
-                                                            <input type="radio" name="estoque" value="N" id="sim-est" checked/>Não
-                                                        </label>
-                                                        <label>
-                                                            <input type="radio" name="estoque" value="S" id="nao-est"/>Sim
-                                                        </label>
-                                                    </fieldset>
+                                                    <div class="radio-esto">
+                                                        <fieldset id="cestoque"><legend>Produto em Estoque</legend>
+                                                            <div class="dados-compra">
+                                                                <div>
+                                                                    <label class="label-radio">
+                                                                        <input  type="radio" name="estoque" value="N" id="sim-est" checked/>&nbsp;Não
+                                                                    </label>
+                                                                </div>
+                                                                <div>
+                                                                    <label class="label-radio">
+                                                                        <input type="radio" name="estoque" value="S" id="nao-est"/>&nbsp;Sim
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+
+                                                    <div class="contener-estoque">
+                                                        <fieldset id="cest-atual"><legend>Estoque</legend>
+                                                            <div class="dados-compra">
+                                                                <div class="data-compra">
+                                                                    <label for="catual">Atual :</label> 
+                                                                    <input type="text" name="tatual" id="catual"  placeholder="000"/>
+                                                                </div>
+                                                                <div>
+                                                                    <label for="cminimo">Minimo :</label> 
+                                                                    <input type="text" name="tminimo" id="cminimo" placeholder="000"/>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="contener-estoque">
-                                                <div class="dados-estoque">
-                                                    <fieldset id="cest-atual"><legend>Estoque</legend>
-                                                        <p>
-                                                            <label for="catual">Atual :</label> <input type="text" name="tatual" id="catual"  placeholder="000"/>
-                                                            <label for="cminimo">Minimo :</label> <input type="text" name="tminimo" id="cminimo" placeholder="000"/>
-                                                        </p>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="prod-est">
-                                                    <fieldset id="prod-tipo">
-                                                        <legend>Produto</legend>
-                                                        <label>
-                                                            <label for="ctipo">Tipo :</label> <input type="text" name="ttipo" id="ctipo"  placeholder="0"/>
-                                                        </label>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
+                                            
                                         <div class="menu-for">
                                             <nav>
                                                 <div class="content nav-botao">

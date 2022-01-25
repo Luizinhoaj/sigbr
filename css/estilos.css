@@ -112,8 +112,9 @@ fieldset{
 }
 
 .desc-prod{
-	margin-right: 55px;
+	margin-right: 75px;
 }
+
 legend{
 	font-size: 1em;
 	padding: 5px;
@@ -131,11 +132,12 @@ legend{
 	margin-top: 10px;
 }
 
-#cvalor, #ccodigo{
+#cvalor, #ccodigo,#cvalor-custo, 
+#catual, #cminimo{
 	margin-left: 5px;
 	padding: 2px;
 	height: 40px;
-	width: 80px;
+	width: 100px;
 	text-align: right;
 }
 
@@ -154,6 +156,40 @@ legend{
 	height: 40px;
 	width: 300px;
 	margin-top: 20px;
+}
+
+#cdata-compra{
+	margin: 5px;
+	padding: 2px;
+	height: 40px;
+	width: 150px;
+}
+
+.data-compra{
+	margin-right: 30px;
+}
+
+.dados-compra{
+	display: flex;
+	width: auto;
+}
+
+.prod-est{
+	display: flex;
+}
+
+.prod-est fieldset{
+	padding: 10px;
+	width: auto;
+	margin-top: 10px;
+}
+
+.radio-esto{
+	margin: 0px 60px 0px 5px;
+}
+.label-radio{
+	padding: 5px;
+	margin-right: 5px;
 }
 
 .formatar-label{
@@ -390,6 +426,11 @@ legend{
 		width: 550px;
 	}
 
+	.img-produto{
+		display: block;
+		margin-bottom: 10px;
+	}
+	
 	.acom-textarea{
 		width: 510px;
 	}
@@ -481,6 +522,10 @@ legend{
 		margin-left: 30px;
 	}
 
+	.prod-est{
+		display: block;
+	}
+	
 	.endereco{
 		display: block;
 	}
