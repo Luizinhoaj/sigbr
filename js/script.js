@@ -35,7 +35,7 @@ function carregaprodutos() {
 }
 
 function carregasetores() {
-  window.location = "produtos.html";
+  window.location = "setores.html";
 }
 
 
