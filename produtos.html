@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/principal.css">
-        <link rel="stylesheet" href="css/fornecedores.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/estilos.css">
 
         <link rel="shortcut icon" href="imagens/sigbr.ico" type="image/x-icon">
         <title>SIGBR - Adicional</title>
@@ -13,181 +13,207 @@
         <script src="https://kit.fontawesome.com/8f10281738.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="menu">
-            <nav>
-                <input type="checkbox" id="show-search">
-                <input type="checkbox" id="show-menu">
-                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-                <div class="content">
-                    <div class="logo"><a href="#">SIGBR</a></div>
-                    <ul class="links">
-                        <li><a onclick="carregahome()" href="#">Home</a></li>
-                        <li>
-                            <a href="#" class="desktop-link">Cadastro</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">Cadastro</label>
-                            <ul>
-                                <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
-                                <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
-                                <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
-                                <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
-                                <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
-                                <li><a onclick="carregamesa()" href="#">Mesa</a></li>
-                                <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
-                                <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
-                                <li><a href="#">Setores</a></li>
-                                <li><a href="#">Usuário</a></li>
-                            </ul>
-                        </li>
+        <header>
+            <div class="menu">
+                <nav>
+                    <input type="checkbox" id="show-search">
+                    <input type="checkbox" id="show-menu">
+                    <label for="show-menu" class="menu-icon"><i class="fas fa-bars fa-2x"></i></label>
+                    <div class="content">
+                        <div class="logo"><a href="#">SIGBR</a></div>
+                        <ul class="links">
+                            <li><a onclick="carregahome()" href="#">Home</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">Cadastro</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">Cadastro</label>
+                                <ul>
+                                    <li><a onclick="carregaacompa()" href="#">Acompanhamento</a></li>
+                                    <li><a onclick="carregaadicionais()" href="#">Adicionais</a></li>
+                                    <li><a onclick="carregacategoria()" href="#">Categoria</a></li>
+                                    <li><a onclick="carregafonecedores()" href="#">Fornecedores</a></li>
+                                    <li><a onclick="carregagarcom()" href="#">Garçom</a></li>
+                                    <li><a onclick="carregamesa()" href="#">Mesa</a></li>
+                                    <li><a onclick="carregaobservacoes()" href="#">Observações</a></li>
+                                    <li><a onclick="carregaprodutos()" href="#">Produtos</a></li>
+                                    <li><a href="#">Setores</a></li>
+                                    <li><a href="#">Usuário</a></li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#" class="desktop-link">Financeiro</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Financeiro</label>
-                            <ul>
-                                <li><a href="#">Caixa</a></li>
-                                <li>
-                                    <a href="#" class="desktop-link">Conta a Pagar</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Conta a Pagar</label>
-                                    <ul>
-                                        <li><a href="#">Lançamentos</a></li>
-                                        <li><a href="#">Baixa / Extorno</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                            <li>
+                                <a href="#" class="desktop-link">Financeiro</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Financeiro</label>
+                                <ul>
+                                    <li><a href="#">Caixa</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Conta a Pagar</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Conta a Pagar</label>
+                                        <ul>
+                                            <li><a href="#">Lançamentos</a></li>
+                                            <li><a href="#">Baixa / Extorno</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#" class="desktop-link">PDV</a>
-                            <input type="checkbox" id="show-features">
-                            <label for="show-features">PDV</label>
-                            <ul>
-                                <li><a href="#">Bar</a></li>
-                                <li><a href="#">Cozinha</a></li>
-                                <li><a href="#">Mapa das Mesas</a></li>
-                                <li><a href="#">Venda de Balcão</a></li>
-                            </ul>
-                        </li>
-                
-                        <li>
-                            <a href="#" class="desktop-link">Relatórios</a>
-                            <input type="checkbox" id="show-services">
-                            <label for="show-services">Relatórios</label>
-                            <ul>
-                                <li><a href="#">Contas a Pagar</a></li>
-                                <li>
-                                   <a href="#" class="desktop-link">Fornecedores</a>
-                                    <input type="checkbox" id="show-items">
-                                    <label for="show-items">Fornecedores</label>
-                                    <ul>
-                                        <li><a href="#">Ordem Alfabética</a></li>
-                                        <li><a href="#">Ordem de Código</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="blog-drop-down">
-                            <a href="#">Contatos</a>
-                            <div class="Blog">
-                                <div class="blog-des">
-                                    <h4 class="blog-title">Ribeiro & Santos</h4>
-                                    <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp" height="100" width="100">
-                                    <p>(37) 99951-3044</p>
+                            <li>
+                                <a href="#" class="desktop-link">PDV</a>
+                                <input type="checkbox" id="show-features">
+                                <label for="show-features">PDV</label>
+                                <ul>
+                                    <li><a href="#">Bar</a></li>
+                                    <li><a href="#">Cozinha</a></li>
+                                    <li><a href="#">Mapa das Mesas</a></li>
+                                    <li><a href="#">Venda de Balcão</a></li>
+                                </ul>
+                            </li>
+                    
+                            <li>
+                                <a href="#" class="desktop-link">Relatórios</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Relatórios</label>
+                                <ul>
+                                    <li><a href="#">Contas a Pagar</a></li>
+                                    <li>
+                                        <a href="#" class="desktop-link">Fornecedores</a>
+                                        <input type="checkbox" id="show-items">
+                                        <label for="show-items">Fornecedores</label>
+                                        <ul>
+                                            <li><a href="#">Ordem Alfabética</a></li>
+                                            <li><a href="#">Ordem de Código</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                            <li class="blog-drop-down">
+                                <a href="#">Contatos</a>
+                                <div class="blog">
+                                    <div class="blog-des">
+                                        <h4 class="blog-title">Ribeiro & Santos</h4>
+                                        <img class="image-zap" src="imagens/whatsapp.png" alt="Whatsapp">
+                                        <h4>(37) 99951-3044</h4>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-    
-                    </ul>
-                </div>
-                <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Type Something to Search..." required>
-                    <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
-                </form>
-            </nav>
-        </div>
-        <section>
-            <form class="formulario">
-                <h1>Produtos</h1>
-                <button type="button" class="btnincluir" onclick="window.location='#'">Incluir</button>
-                <button type="button" class="btnalterar" onclick="window.location='#'">Altear</button>
-                <button type="button" class="btnexcluir" onclick="window.location='#'">Exluir</button>
-                <button type="button" class="btnpesquisa" onclick="window.location='#'">Pesquisar</button>
-                <button type="button" class="btnconfirmar" onclick="window.location='#'">Confimar</button>
-                <button type="button" class="btncancelar" onclick="window.location='#'">Cancelar</button>
-                <button type="button" class="btnacomponha" onclick="window.location='#'">Acompanhamento</button>
-                <fieldset id="for-legenda">
-                    <div class="contener">
-                        <div class="dados">
-                            <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
-                            <p><label for="ccod-barra">Codigo de Barra :</label><input type="text" name="tcod-barra" id="ccod-barra" placeholder="Codigo de Barra"/></p>
-                            <p><label for="ccod-for">Fornecedor :</label>
-                                <select id=cbforne>
-                                    <option>Seleciona o Fornecedor</option>
-                                </select>
-                            </p>
-                            <p><label for="ccod-setor">Setor :</label>
-                                <select id=cbsetor>
-                                    <option>Seleciona o Setor</option>
-                                </select>
-                            </p>
-                            <p><label for="ccod-categoria">Categoria :</label>
-                                <select id=cbcatgoria>
-                                    <option>Seleciona a Categoria</option>
-                                </select>
-                            </p>
-                        </div>
-                        <div class="imagem">
-                            <fieldset id="img-fomulario"><legend>Imagem</legend>
-                                <img class="imagem-fomulario" src="imagens/sem-imagem.jpg" alt="Imagem não Existe">
-                                <button type="button">buscar</button>
-                            </fieldset>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="contener-compras">
-                        <div class="dados-compra">
-                            <fieldset id="ccompra"><legend>Dados da Compra</legend>
-                                <p>
-                                    <label for="cdata-compra">Data da Compra :</label> <input type="date" name="tcdata-compra" id="cdata-compra"/>
-                                    <label for="cvalor-custo">Valor do Custo :</label> <input type="number" name="tvalor-custo" id="cvalor-custo" placeholder="000"/>
-                                </p>
-                            </fieldset>
-                        </div>
-                        <div class="prod-est">
-                            <fieldset id="cestoque">
-                                <legend>Produto em Estoque</legend>
-                                <label>
-                                    <input type="radio" name="estoque" value="N" id="sim-est" checked/>Não
-                                </label>
-                                <label>
-                                    <input type="radio" name="estoque" value="S" id="nao-est"/>Sim
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                    <div class="contener-estoque">
-                        <div class="dados-estoque">
-                            <fieldset id="cest-atual"><legend>Estoque</legend>
-                                <p>
-                                    <label for="catual">Atual :</label> <input type="text" name="tatual" id="catual"  placeholder="000"/>
-                                    <label for="cminimo">Minimo :</label> <input type="text" name="tminimo" id="cminimo" placeholder="000"/>
-                                </p>
-                            </fieldset>
-                        </div>
-                        <div class="prod-est">
-                            <fieldset id="prod-tipo">
-                                <legend>Produto</legend>
-                                <label>
-                                    <label for="ctipo">Tipo :</label> <input type="text" name="ttipo" id="ctipo"  placeholder="0"/>
-                                </label>
-                            </fieldset>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+                </nav>
+            </div>
+        </header>
+        <div class="container">     <!-- Inicio da div container -->
+            <div class="row">       <!-- Inicio da div row -->
+                <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
+                    <h1 class="text-center">Produtos</h1>
+                    <div class="row">       <!-- Inicio da div row Formulario -->
+                        <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
+                            <form class="form-control card-principal" id="for-cadastro">
+                                <div class="card cad-forne">
+                                    <div class="card-body">
+                                        <div class="dados">
+                                            <div class="endereco">
+                                                <div>
+                                                    <label for="ccodigo">Código :</label>
+                                                    <input type="text" name="tcodigo" id="ccodigo" placeholder="000" disabled/>
+                                                </div>
+                                                <div class="formatar-label">
+                                                    <label for="ccodigobarra">Codigo de Barra :</label>
+                                                    <input type="text" name="tcodigobarra" id="ccodigobarra" placeholder="Codigo de Barra" disabled/>
+                                                </div>
+                                            </div>
+                                            <div  class="img-produto">
+                                                <div class="desc-prod">
+                                                    <div>
+                                                        <label for="ccod-for">Fornecedor :</label>
+                                                        <select id="ccod-for" disabled>
+                                                            <option>Seleciona o Fornecedor</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="formatar-label">
+                                                        <label for="ccod-setor">Setor :</label>
+                                                        <select id="ccod-setor" disabled>
+                                                            <option>Seleciona o Setor</option>
+                                                        </select>
+                                                    </div>
+                                                    <div>
+                                                        <label for="ccod-categoria">Categoria :</label>
+                                                        <select id="ccod-categoria" disabled>
+                                                            <option>Seleciona a Categoria</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="cad-imagem">
+                                                    <div>
+                                                        <fieldset id="img-fomulario"><legend>Imagem</legend>
+                                                            <img src="imagens/sem-imagem.jpg" class="img-thumbnail" alt="Imagem não Existe">
+                                                            <button disabled type="button" id="btnbusca" href="#">Buscar</button>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p><label class="lb-descricao" for="cdescricao">Descrição :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Descrição do Produto" disabled/></p> 
+                                            <div class="contener-compras">
+                                                <div class="dados-compra">
+                                                    <fieldset id="ccompra"><legend>Dados da Compra</legend>
+                                                        <p>
+                                                            <label for="cdata-compra">Data da Compra :</label> <input type="date" name="tcdata-compra" id="cdata-compra"/>
+                                                            <label for="cvalor-custo">Valor do Custo :</label> <input type="number" name="tvalor-custo" id="cvalor-custo" placeholder="000"/>
+                                                        </p>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="prod-est">
+                                                    <fieldset id="cestoque">
+                                                        <legend>Produto em Estoque</legend>
+                                                        <label>
+                                                            <input type="radio" name="estoque" value="N" id="sim-est" checked/>Não
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="estoque" value="S" id="nao-est"/>Sim
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="contener-estoque">
+                                                <div class="dados-estoque">
+                                                    <fieldset id="cest-atual"><legend>Estoque</legend>
+                                                        <p>
+                                                            <label for="catual">Atual :</label> <input type="text" name="tatual" id="catual"  placeholder="000"/>
+                                                            <label for="cminimo">Minimo :</label> <input type="text" name="tminimo" id="cminimo" placeholder="000"/>
+                                                        </p>
+                                                    </fieldset>
+                                                </div>
+                                                <div class="prod-est">
+                                                    <fieldset id="prod-tipo">
+                                                        <legend>Produto</legend>
+                                                        <label>
+                                                            <label for="ctipo">Tipo :</label> <input type="text" name="ttipo" id="ctipo"  placeholder="0"/>
+                                                        </label>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        <div class="menu-for">
+                                            <nav>
+                                                <div class="content nav-botao">
+                                                    <button          type="button" id="btnincluir"   href="#">Incluir</button>
+                                                    <button          type="button" id="btnalterar"   href="#">Alterar</button>
+                                                    <button          type="button" id="btnexcluir"   href="#">Excluir</button>
+                                                    <button          type="button" id="btnpesquisa"  href="#">Pesquisa</button>
+                                                    <button disabled type="button" id="btnconfirmar" href="#">Confirmar</button>
+                                                    <button disabled type="button" id="btncancelar"  href="#">Cancelar</button>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>  <!-- Fim da div col 12 Formulario -->
+                    </div>     <!-- Fim da div row Formulario -->
+                </div>  <!-- Fim da div col md 12 -->
+            </div>   <!-- Fim da div row -->
+        </div>      <!-- Fim da div container -->  
         <script src="js/script.js"></script>
     </body>
 </html>

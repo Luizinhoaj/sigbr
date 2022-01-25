@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 :root{
-	--cor-fonte:   #fff;
+	--cor-fonte-titulo:   #fff;
+	--cor-fonte:   #000;
 	--cor-fundo:   #801515;
 	--cor-menu:	   #550000;
 	--cor-submenu: #AA3939;
@@ -55,7 +56,7 @@ nav .content .links{
 }
 
 .content .logo a{
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
 	font-size: 30px;
 	font-weight: 600;
 }
@@ -67,7 +68,7 @@ nav .content .links{
 
 .content .links li a,
 .content .links li label{
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
   	font-size: 16px;
   	font-weight: 500;
   	padding: 9px 17px;
@@ -85,7 +86,7 @@ nav .content .links{
 }
 
 .menu .menu-icon{
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
 	font-size: 16px;
 	cursor: pointer;
 	line-height: 70px;
@@ -160,7 +161,7 @@ nav .content .links{
 	width: 200px;
 	height: 250px;
 	margin-top:  265px;
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
 	background:var(--cor-submenu);
 }
 
@@ -215,7 +216,7 @@ nav .content .links{
 
 #btnincluir, #btnalterar, #btnexcluir, 
 #btnconfirmar, #btncancelar, #btnpesquisa{
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
 	font-size: 100%;
 	font-weight: 500;
 	padding: 5px 10px;
@@ -228,7 +229,7 @@ nav .content .links{
 
 
 #btnbusca{
-	color: var(--cor-fonte);
+	color: var(--cor-fonte-titulo);
 	font-size: 100%;
 	font-weight: 500;
 	padding: 5px 10px;
