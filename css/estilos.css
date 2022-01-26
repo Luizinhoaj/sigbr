@@ -91,6 +91,11 @@ fieldset{
 	margin: 0px 17px 10px 10px;
 }
 
+.legenda{
+	font-size: 1em;
+	padding: 10px;
+}
+
 .telefones{
 	display: flex;
 }
@@ -167,6 +172,11 @@ legend{
 
 .data-compra{
 	margin-right: 30px;
+}
+
+.dados-usuario{
+	display: flex;
+	width: auto;
 }
 
 .dados-compra{
@@ -282,6 +292,56 @@ legend{
 	height: 40px;
 	width: 500px;
 }
+
+#cusuario{
+	margin: 10px;
+	padding: 2px;
+	height: 40px;
+	width: 200px;
+}
+
+#csenha{
+	margin: 5px;
+	padding: 2px;
+	height: 40px;
+	margin-bottom: 10px;
+	width: 200px;
+}
+
+.form-privilegio{
+	display: flex;
+	width: auto;
+	margin: 0px 17px 10px 10px;
+}
+
+#usu-cad{
+	margin-left: 10px;
+}
+
+.usuario-cad{
+	margin-bottom: 20px;
+}
+
+#usu-pdv{
+	margin-left: 20px;
+}
+
+#usu-manu{
+	margin-left: 20px;
+}
+
+#usu-fin{
+	margin-left: 20px;
+}
+
+#usu-rel{
+	margin-left: 20px;
+}
+
+#usu-gar{
+	margin-left: 20px;
+}
+
 
 
 /* INICIO MENSAGEM DE ALERTA */
@@ -518,6 +578,15 @@ legend{
 		font-size: 0.8em;
 	}
 
+	.dados-usuario{
+		display: block;
+	}
+	
+	.usuario-cad{
+		margin-bottom: 0px;
+		margin-left: 10px;
+	}
+	
 	.cad-imagem{
 		margin-left: 30px;
 	}

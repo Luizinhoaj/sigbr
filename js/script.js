@@ -38,6 +38,10 @@ function carregasetores() {
   window.location = "setores.html";
 }
 
+function carregausuarios() {
+  window.location = "usuarios.html";
+}
+
 
 function cadformulario() {
   var descricao = $('#cdescricao');

@@ -109,32 +109,58 @@
         <div class="container">     <!-- Inicio da div container -->
             <div class="row">       <!-- Inicio da div row -->
                 <div class="col-md-12 container-for">     <!-- Inicio da div col-md-12 -->
-                    <h1 class="text-center">Garçom</h1>
+                    <h1 class="text-center">Usuários</h1>
                     <div class="row">       <!-- Inicio da div row Formulario -->
                         <div class="col-12">      <!-- Inicio da div col 12 Formulario -->
                             <form class="form-control card-principal" id="for-cadastro">
                                 <div class="card">
                                     <div class="card-body">
-                                        <p><label for="ccodigo">Código :</label><input type="text" name="tcodigo" id="ccodigo" placeholder="000"/></p>
-                                        <p><label for="cdescricao">Nome :</label> <input type="text" name="tdescicao" id="cdescricao" placeholder="Nome do Garçom"/></p>
-                                        <div class="for-fone-garcom">
-                                            <fieldset class="legend" id="fone"><legend>Telefones</legend>
-                                            <div class="telefones">
-                                                <div>
-                                                    <input type="tel" name="tcelular1" id="ccelular1" placeholder="(99) 99999-9999"/>
-                                                </div>
-                                                <div>
-                                                    <input type="tel" name="tcelular2" id="ccelular2" placeholder="(99) 99999-9999"/>
-                                                </div>
-                                            </div>
-                                            </fieldset>
+                                        <div>
+                                            <label for="cusuario">Usuário :</label>
+                                            <input type="text" name="tusuario" id="cusuario" placeholder="Usuário" disabled/>
                                         </div>
-                                        <div class="row cad-for-imagem">
+                                        <div>
+                                            <label for="csenha">Senha :</label> 
+                                            <input type="text" name="tsenha" id="csenha" placeholder="Senha" disabled/></p>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-12 cad-formulario">
-                                                <div class="form-groupo">
-                                                    <fieldset><legend class="legenda">Garçons Cadastrados</legend>
-                                                        <textarea class="form-group acom-textarea" name="grupos-cad" id="grupos-cad" disabled></textarea>
-                                                    </fieldset>
+                                                <div class="form-privilegio">
+                                                    <fieldset><legend class="legenda">Privilégios</legend>
+                                                        <div class="dados-usuario">
+                                                            <div class="usuario-cad">
+                                                                <label>
+                                                                    <input  type="checkbox" name="usuario" value="" id="usu-cad" disabled/>&nbsp;Cadastro
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label>
+                                                                    <input type="checkbox" name="usuario" value="" id="usu-pdv" disabled/>&nbsp;PDV
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label>
+                                                                    <input type="checkbox" name="usuario" value="" id="usu-manu" disabled/>&nbsp;Manutenção
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label>
+                                                                    <input type="checkbox" name="usuario" value="" id="usu-fin" disabled/>&nbsp;Financeiro
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label>
+                                                                    <input type="checkbox" name="usuario" value="" id="usu-rel" disabled/>&nbsp;Relatórios
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <label>
+                                                                    <input type="checkbox" name="usuario" value="" id="usu-gar" disabled/>&nbsp;Garçom
+                                                                </label>
+                                                            </div>
+
+                                                        </div>
+                                                </fieldset>
                                                 </div>
                                             </div>                                            
                                         </div>
