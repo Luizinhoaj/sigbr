@@ -146,6 +146,16 @@ form, .alert {
 	margin-bottom: 0;
 }
 
+.senha-erro{
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
+    width: auto;
+    height: 40px;
+    background: var(--cor-submenu);
+    color: var(--cor-fonte);
+}
+
 #cusuario, #csenha{
 	margin-bottom: 5px;
 	width: 300px;
