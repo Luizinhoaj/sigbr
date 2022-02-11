@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root{
+	--cor-fonte-titulo:   #fff;
+	--cor-fonte:   #000;
+	--cor-fundo:   #801515;
+	--cor-menu:	   #550000;
+	--cor-submenu: #AA3939;
+	--cor-hover:   #D46A6A;
+	--cor-border:  #365670;
+
+	--fonte-geral: 'Roboto', sans-serif;
+}
+
+*{
+	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	text-decoration: none;
+  	font-family: var(--fonte-geral);
+	font-size: 1em;
+}
+
+body{
+	background: var(--cor-fundo);
+}
+
+
+/*  INICIO DO MENU */
+
+.menu{
+  	background: var(--cor-menu);
+  	position: fixed;
+  	width: 100%;
+  	z-index: 20;
+}
+
+.menu nav{
+	position: relative;
+	display: flex;
+  	max-width: calc(100% - 200px);
+  	margin: 0 auto;
+  	height: 70px;
+  	align-items: center;
+  	justify-content: space-between;
+}
+
+nav .content{
+	display: flex;
+  	align-items: center;
+}
+
+nav .content .links{
+	margin-left: 80px;
+	display: flex;
+}
+
+.content .logo a{
+	color: var(--cor-fonte-titulo);
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.content .links li{
+	list-style: none;
+	line-height: 70px;
+}
+
+.content .links li a,
+.content .links li label{
+	color: var(--cor-fonte-titulo);
+  	font-size: 16px;
+  	font-weight: 500;
+  	padding: 9px 17px;
+  	border-radius: 5px;
+  	transition: all 0.3s ease;
+}
+
+.content .links li label{
+	display: none;
+}
+
+.content .links li a:hover,
+.content .links li label:hover{
+	background: var(--cor-hover);
+}
+
+.menu .menu-icon{
+	color: var(--cor-fonte-titulo);
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 70px;
+	width: 70px;
+  	text-align: center;
+	display: none;
+}
+
+.menu #show-search:checked ~ .search-icon i::before{
+	content: "\f00d";
+}
+
+.menu input[type="checkbox"]{
+	display: none;
+}
+
+.content .links ul{
+  	position: absolute;
+  	background: var(--cor-submenu);
+  	top: 80px;
+  	z-index: -1;
+  	opacity: 0;
+	visibility: hidden;
+}
+
+.content .links li:hover > ul{
+  	top: 70px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  	opacity: 1;
+  	visibility: visible;
+	transition: all 0.3s ease;
+}
+
+.content .links ul li a{
+  	display: block;
+  	width: 100%;
+  	line-height: 30px;
+	border-radius: 0px!important;
+}
+
+.content .links ul ul{
+  	position: absolute;
+  	top: 0;
+	right: calc(-115% + 4px);
+}
+
+.content .links ul li{
+	position: relative;
+}
+
+.content .links ul li:hover ul{
+	top: 0;
+}
+ 
+.clas-logo{
+	position: absolute;
+	top: 20%;
+	left: 30%;
+	width: auto;
+	z-index: 10;
+}
+
+.image-logo{
+	display: block;
+	margin: 0px;
+  	width: 400px;
+}
+
+.blog{
+	display:none;
+	width: 200px;
+	height: 250px;
+	margin-top:  265px;
+	color: var(--cor-fonte-titulo);
+	background:var(--cor-submenu);
+}
+
+.blog .blog-title{
+	color:var(--fonte-geral);
+  	font-size:15px;
+  	text-transform:uppercase;
+	transition: all 0.3s ease;
+}
+  
+.blog .blog-des{
+	color: var(--fonte-geral);
+	font-size: 90%;
+	text-align: center;
+}
+
+.blog-drop-down > a:hover+.blog{
+	display:block;
+}
+
+.image-zap{
+	width: 50%;
+	height: auto;
+}
+
+
+/* MENU FORMULARIO */
+
+.menu-for .nav-botao{
+	display: inline-flex;
+	text-align: center;
+}
+
+#btnincluir, #btnalterar, #btnexcluir, 
+#btnconfirmar, #btncancelar, #btnpesquisa, #btnbusca{
+	background-color: var(--cor-menu);
+	cursor: pointer;
+}
+
+.menu-for{
+	margin: 0px auto;
+	text-align: center;
+}
+
+.nav-botao{
+	position: relative;
+	display: flex;
+	margin: 0 auto;
+	height: 60px;
+	align-items: center;
+}
+
+#btnincluir, #btnalterar, #btnexcluir, 
+#btnconfirmar, #btncancelar, #btnpesquisa{
+	color: var(--cor-fonte-titulo);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	background-color: var(--cor-menu);
+	margin-left: 5px;
+}
+
+
+#btnbusca{
+	color: var(--cor-fonte-titulo);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	background-color: var(--cor-menu);
+	margin: 0 0 5px 5px;
+}
+
+#btnincluir:hover, #btnalterar:hover, #btnexcluir:hover, #btnpesquisa:hover,
+#btnconfirmar:hover, #btncancelar:hover, #btnbusca:hover{
+  background: var(--cor-hover);
+}
+
+/* INICIO DO MENU RESPONSIVEL */
+
+
+@media screen and (max-width: 1250px){
+  .menu nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+
+  .content .links li a{
+    padding: 8px 13px;
+  }
+
+  .menu .search-box input{
+    padding: 0 100px 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+
+	.menu .menu-icon{
+    	display: block;
+  	}
+  
+	.menu #show-menu:checked ~ .menu-icon i::before{
+    	content: "\f00d";
+  	}
+  
+	nav .content .links{
+    	display: block;
+    	position: fixed;
+    	background: var(--cor-submenu);
+    	height: 100%;
+    	width: 100%;
+    	top: 70px;
+    	left: -100%;
+    	margin-left: 0;
+    	max-width: 350px;
+    	overflow-y: auto;
+    	padding-bottom: 100px;
+    	transition: all 0.3s ease;
+  	}
+
+  	nav #show-menu:checked ~ .content .links{
+    	left: 0%;
+  	}
+  
+	.content .links li{
+    	margin: 15px 20px;
+  	}
+
+  	.content .links li a,
+  	.content .links li label{
+    	line-height: 40px;
+    	font-size: 20px;
+    	display: block;
+    	padding: 8px 18px;
+    	cursor: pointer;
+  	}
+  
+	.content .links li a.desktop-link{
+    	display: none;
+  	}
+	  
+  	.content .links ul,
+  	.content .links ul ul{
+    	position: static;
+    	opacity: 1;
+    	visibility: visible;
+    	background: none;
+    	max-height: 0px;
+    	overflow: hidden;
+  	}
+
+  	.content .links #show-features:checked ~ ul,
+  	.content .links #show-services:checked ~ ul,
+  	.content .links #show-items:checked ~ ul{
+    	max-height: 100vh;
+  	}
+  
+	.content .links ul li{
+    	margin: 7px 20px;
+  	}
+
+  	.content .links ul li a{
+    	font-size: 18px;
+    	line-height: 30px;
+    	border-radius: 5px!important;
+  	}
+}
+
+@media screen and (max-width: 500px){
+
+	.logo{
+		margin-left: 25vw;
+	}
+}
+
+@media screen and (max-width: 400px){
+	
+	#btnincluir, #btnalterar, #btnexcluir, #btnpesquisa, 
+	#btnconfirmar, #btncancelar, #btnbusca{
+		font-size: 80%;
+		font-weight: 500;
+		padding: 5px 5px;
+		border-radius: 5px;
+		margin-left: 2px;
+	}
+			
+}

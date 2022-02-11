@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+	--cor-fonte:   #fff;
+	--cor-fundo:   #801515;
+	--cor-menu:	   #550000;
+	--cor-submenu: #AA3939;
+	--cor-hover:   #D46A6A;
+	--cor-border:  #00000056;
+
+	--fonte-geral: 'Poppins', sans-serif;
+}
+
+*{
+	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  	text-decoration: none;
+  	font-family: var(--fonte-geral);
+	font-size: 1em;
+}
+
+.imagem-respo span{
+    display: none;
+}
+
+body{
+    background: var(--cor-fundo);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contanier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    background: var(--cor-menu);
+    border-radius: 15px;
+    width: 70%;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.titulo-um{
+    color: var(--cor-fonte);
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.titulo-dois{
+    color: var(--cor-fonte);
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.sub-titulo{
+    color: var(--cor-fonte);
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.first-column{
+    text-align: center;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    border-right: 15px solid var(--cor-fundo);
+}
+
+.second-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 70%;
+}
+
+div#image{
+    height: 100%;
+    background-image: url(../imagens/logo1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.first-content{
+    display: flex;
+}
+
+.btn{
+    margin-top: 15px;
+    width: 55%;
+    padding: 16px 0px;
+    border: none;
+    border-bottom: 5px solid var(--cor-fundo);
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--cor-fonte);
+    background: var(--cor-submenu);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--cor-border);
+    transition: transform 0.5s;
+    text-decoration: none;
+    align-self: center;
+}
+
+.btn:hover{
+    background: var(--cor-menu);
+    box-shadow: 0px 0px 10px var(--cor-fundo);
+    transform: translate(0px, -5px);
+    color: var(--cor-fonte);
+    transition: transform 0.5s;
+}
+
+.card-principal{
+	background: var(--cor-fundo);
+	border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 22px;
+    padding: 15px;
+    width: 90%;	
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	height: 120px;
+	resize: none;
+}
+
+form, .alert {
+	margin-bottom: 0;
+}
+
+.senha-erro{
+    border-radius: 10px;
+    margin: 0px 10px 10px 10px;
+    padding: 5px;
+    width: auto;
+    height: 40px;
+    background: var(--cor-submenu);
+    color: var(--cor-fonte);
+}
+
+#cusuario, #csenha{
+    text-transform: uppercase;
+	margin-bottom: 5px;
+	width: 300px;
+}
+
+/* INICIO DO RESPONSIVEL  */
+
+@media only screen and (max-width: 1150px){
+    .sub-titulo{
+        font-size: 12px;
+    }    
+}
+
+@media only screen and (max-width: 1113px){
+
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 250px;
+    }    
+}
+
+@media only screen and (max-width: 961px){
+
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 200px;
+    }    
+
+    div#image{
+        height: 100%;
+        background-image: url(../imagens/logo2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }    
+
+}
+
+@media only screen and (max-width: 810px){
+
+    #cusuario, #csenha{
+        margin-bottom: 5px;
+        width: 150px;
+    }    
+
+    .card-principal{
+        margin-left: 12px;
+    }
+           
+    .imagem-respo span{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 680px){
+    
+    .first-content{
+        margin-top: -80px;
+        height: auto;
+    }
+
+    form{
+        margin-bottom: 30px;
+    }
+
+   .first-column{
+        display: none;
+    }
+    
+    .second-column{
+        flex: 2 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        height: 70%;
+    }    
+        
+}
