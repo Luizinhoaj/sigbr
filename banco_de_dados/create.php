@@ -76,7 +76,7 @@
         {
             ?>
                 <script type="text/javascript">
-                    alert('Preencha os campos obrigtórios!');
+                    alert('Preencha o campo Decrição ele é obrigtório!');
                 </script>
             <?php
         }
