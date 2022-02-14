@@ -50,8 +50,8 @@
                                         <input type="text" name="tcodigo" id="ccodigo" value="<?php echo $codigo ?>" disabled/>
                                     </p>
                                     <p>
-                                        <label class="lb-descricao" for="cdescricao">Descrição :</label> 
-                                        <input type="text" name="tdescicao" id="cdescricao" size="25" oninput="maiuscula(event)" value="<?php echo $descricao ?>" disabled/>
+                                        <label class="lb-descricao" for="cdescricao">Descrição :</label>
+                                        <input type="text" name="tdescricao" id="cdescricao" size="25" oninput="maiuscula(event)" value="<?php echo $descricao ?>" disabled/>
                                     </p> 
                                     <p>
                                         <label for="cvalor">Valor :</label>
