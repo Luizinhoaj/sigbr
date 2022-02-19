@@ -1,5 +1,5 @@
 <?php
-    include('banco_de_dados/logout.php');
+    require "banco_de_dados/logout.php";
     session_start();
 ?>
 
@@ -30,6 +30,13 @@
                 </div>
 
                 <div class="second-column"> <!-- inicio da Segunda coluna -->
+                    <? if(isset($_GET['acessar']) && $_GET['acessar'] == 1 ) {?>
+                        <div class="bg-sucess pt-2 text-white d-flex justify-content-center">
+                            <h5>Usuario ou Senha incorreto!</h5>
+                            <p>
+                            <h5>Tenta Novamente</h5>
+                        </div>
+                    <? } ?>
                     <h1 class="titulo-dois">Login</h1>
                     <form action="banco_de_dados/login.php" method="POST" class="form-control card-principal" id="for-cadastro">
                         <div class="card">
